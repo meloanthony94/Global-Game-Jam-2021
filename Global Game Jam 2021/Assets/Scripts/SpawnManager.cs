@@ -32,7 +32,13 @@ public class SpawnManager : MonoBehaviour
         EventManager.StartListening("RespawnSuperFood", HandleRespawnSuperFoodEvent);
     }
 
-    public void SetPlayerSpawns(int numberOfPlayers)
+    public void SpawnGameObjects(int numberOfPlayers)
+    {
+        SetPlayerSpawns(numberOfPlayers);
+        SpawnFood();
+    }
+
+    private void SetPlayerSpawns(int numberOfPlayers)
     {
         Vector3[] playerPositions = playerSpawns[numberOfPlayers - 2].playerSpawnPoints;
         for (int i = 0; i < numberOfPlayers; i++)
@@ -42,7 +48,7 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
-    public void SpawnFood()
+    private void SpawnFood()
     {
         SpawnSuperFood();
         SpawnBaseFood();
