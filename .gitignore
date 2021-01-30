@@ -2,6 +2,9 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
+/Global Game Jam 2021/Library/
+Global Game Jam 2021/Library/
+Global Game Jam 2021/[Ll]ibrary/
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
