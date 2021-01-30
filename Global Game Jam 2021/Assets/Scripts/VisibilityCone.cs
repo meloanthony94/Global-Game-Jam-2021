@@ -10,7 +10,8 @@ public class VisibilityCone : MonoBehaviour
 
     [Header("Scriptable Objects")]
     [SerializeField]
-    BoolReference detectionStatus;
+    bool isActive = false;
+    public bool IsActive { get => isActive; set => isActive = value; }
 
     //[SerializeField]
     //GameObjectPool IndicatorLinePool;
@@ -30,6 +31,10 @@ public class VisibilityCone : MonoBehaviour
     [SerializeField]
     LineRenderer ArcLineB;
 
+    [Header("Line Origin")]
+    [SerializeField]
+    Transform origin = null;
+
     List<GameObject> indicatorLineList = new List<GameObject>();
 
     // Update is called once per frame
@@ -37,12 +42,12 @@ public class VisibilityCone : MonoBehaviour
     {
         if (pauseStatus.Value == false)
         {
-            if (detectionStatus.Value == true)
+            if (IsActive == true)
             {
                 DrawCone();
                 //DrawIndicators();
             }
-            else if (detectionStatus.Value == false)
+            else if (IsActive == false)
             {
                 ClearIndicators();
                 ArcLineA.enabled = false;
@@ -57,12 +62,12 @@ public class VisibilityCone : MonoBehaviour
         Vector3 viewAngleB = DirFromAngle(viewAngle.Value / 2, false);
 
         ArcLineA.enabled = true;
-        ArcLineA.SetPosition(0, transform.position);
-        ArcLineA.SetPosition(1, transform.position + viewAngleA * viewRadius.Value);
+        ArcLineA.SetPosition(0, origin.position);
+        ArcLineA.SetPosition(1, origin.position + viewAngleA * viewRadius.Value);
 
         ArcLineB.enabled = true;
-        ArcLineB.SetPosition(0, transform.position);
-        ArcLineB.SetPosition(1, transform.position + viewAngleB * viewRadius.Value);
+        ArcLineB.SetPosition(0, origin.position);
+        ArcLineB.SetPosition(1, origin.position + viewAngleB * viewRadius.Value);
     }
 
     /*
@@ -112,7 +117,7 @@ public class VisibilityCone : MonoBehaviour
     {
         if (!angleIsGlobal)
         {
-            angleInDegrees += -transform.eulerAngles.z;
+            angleInDegrees += origin.eulerAngles.y;
         }
 
         return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0, Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
