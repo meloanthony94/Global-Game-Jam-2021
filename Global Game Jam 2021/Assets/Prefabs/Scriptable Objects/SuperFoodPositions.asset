@@ -10,10 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0fa7f28b3bb19d449a39b6dd1d66768c, type: 3}
-  m_Name: 2PlayerSpawner
+  m_Name: SuperFoodPositions
   m_EditorClassIdentifier: 
   playerSpawnPoints:
-  - {x: -4.5, y: 14, z: -5.5}
-  - {x: -4.5, y: 14, z: 5.5}
-  - {x: 4.5, y: 14, z: 5.5}
-  - {x: 4.5, y: 14, z: -5.5}
+  - {x: -4, y: 14, z: 2}
+  - {x: 4, y: 14, z: 2}
+  - {x: -4, y: 14, z: -2}
+  - {x: 4, y: 14, z: -2}
+  - {x: 0, y: 14, z: 5}
+  - {x: 0, y: 14, z: -5}
+  - {x: 5, y: 14, z: 0}
+  - {x: -5, y: 14, z: 0}

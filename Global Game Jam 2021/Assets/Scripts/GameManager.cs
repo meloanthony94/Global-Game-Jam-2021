@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
 
     private int numberOfActivePlayers = 0;
 
+    private bool stateChanged = false;
+
     private enum GameState
     {
         NONE, 
@@ -32,19 +34,25 @@ public class GameManager : MonoBehaviour
         EventManager.StartListening("Resume", HandleResumeGameEvent);
         EventManager.StartListening("PlayerDied", HandlePlayerDeadEvent);
 
-        currentState = GameState.NONE;
+        SetGameState(GameState.NONE);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Process();
+        if (stateChanged)
+        {
+            stateChanged = false;
+            Process();
+        }
     }
 
     private void SetGameState(GameState state)
     {
         Debug.Log("Game state set to " + state.ToString());
         currentState = state;
+
+        stateChanged = true;
     }
 
     private void Process()
@@ -52,7 +60,10 @@ public class GameManager : MonoBehaviour
         switch (currentState)
         {
             case GameState.NONE:
-                return;
+                numberOfActivePlayers = numberOfPlayers = 4;
+                StartGame();
+                
+                break;
             case GameState.PLAY:
                 if (numberOfActivePlayers == 1)
                 {
@@ -97,10 +108,18 @@ public class GameManager : MonoBehaviour
     {
         numberOfActivePlayers = numberOfPlayers;
         SpawnPlayers();
+        SpawnFood();
+
+        SetGameState(GameState.PLAY);
     }
 
     private void SpawnPlayers()
     {
         spManager.SetPlayerSpawns(numberOfPlayers);
+    }
+
+    private void SpawnFood()
+    {
+        spManager.SpawnFood();
     }
 }

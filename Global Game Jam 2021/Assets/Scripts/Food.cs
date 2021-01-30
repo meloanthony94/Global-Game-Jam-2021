@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Food : MonoBehaviour, IFood
 {
+    [SerializeField]
     private int powerValue;
     public int PowerValue
     {

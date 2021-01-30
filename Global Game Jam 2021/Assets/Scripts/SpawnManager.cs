@@ -34,7 +34,7 @@ public class SpawnManager : MonoBehaviour
 
     public void SetPlayerSpawns(int numberOfPlayers)
     {
-        Vector3[] playerPositions = playerSpawns[numberOfPlayers - 1].playerSpawnPoints;
+        Vector3[] playerPositions = playerSpawns[numberOfPlayers - 2].playerSpawnPoints;
         for (int i = 0; i < numberOfPlayers; i++)
         {
             playerObjects[i].transform.localPosition = playerPositions[i];
@@ -50,7 +50,7 @@ public class SpawnManager : MonoBehaviour
 
     public void SpawnSuperFood()
     {
-        Debug.Assert(numberOfSuperFood > superFoodObjects.Count, "Number of super food objects to spawn is greater than the number of objects available!");
+        Debug.Assert(numberOfSuperFood < superFoodObjects.Count, "Number of super food objects to spawn is greater than the number of objects available!");
 
         var randomIndicies = GetRandomIndicies(numberOfSuperFood);
         for (int i = 0; i < numberOfSuperFood; i++)
@@ -73,11 +73,10 @@ public class SpawnManager : MonoBehaviour
         superFoodPositions.Remove(superFoodData.position);
 
         int randomValue = Random.Range(0, numberOfSuperFood);
-        while (superFoodPositions.Contains(randomValue))
-        {
-            randomValue = Random.Range(0, numberOfSuperFood);
-        }
+        StartCoroutine(GetRandomValue(superFoodPositions, randomValue, numberOfSuperFood));
+
         superFoodPositions.Add(randomValue);
+        superFoodData.position = randomValue;
 
         superFoodObjects[superFoodID].transform.localPosition = superFoodSpawns.playerSpawnPoints[randomValue];
         superFoodObjects[superFoodID].SetActive(true);
@@ -85,7 +84,7 @@ public class SpawnManager : MonoBehaviour
 
     public void SpawnBaseFood()
     {
-        Debug.Assert(numberOfBaseFood > baseFoodObjects.Count, "Number of base food objects to spawn is greater than the number of objects available!");
+        Debug.Assert(numberOfBaseFood < baseFoodObjects.Count, "Number of base food objects to spawn is greater than the number of objects available!");
         
         for (int i = 0; i < numberOfBaseFood; i++)
         {
@@ -94,18 +93,15 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
-    private static List<int> GetRandomIndicies(int count)
+    private List<int> GetRandomIndicies(int count)
     {
         var result = new List<int>();
         var hash = new HashSet<int>();
         
         for (int i = 0; i < count; i++)
         {
-            int randomValue = Random.Range(0, count);
-            while (hash.Contains(randomValue))
-            {
-                randomValue = Random.Range(0, count);
-            }
+            int randomValue = Random.Range(0, count - 1);
+            StartCoroutine(GetRandomValue(hash, randomValue, count));
             hash.Add(randomValue);
             result.Add(randomValue);
         }
@@ -116,5 +112,15 @@ public class SpawnManager : MonoBehaviour
     public void TogglePlayer(int playerId, bool toggle)
     {
         playerObjects[playerId].SetActive(toggle);
+    }
+
+    private IEnumerator GetRandomValue(HashSet<int> hash, int randomValue, int count)
+    {
+        while (hash.Contains(randomValue))
+        {
+            randomValue = Random.Range(0, count - 1);
+
+            yield return null;
+        }
     }
 }
