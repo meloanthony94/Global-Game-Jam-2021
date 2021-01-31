@@ -596,6 +596,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1756635541946988605, guid: 3b7bd64b0328d6f43acc82325340b8ec, type: 3}
+--- !u!114 &432619944 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6893372214007727025, guid: 11ebed7d335d7164eb38f5a181dddb15,
+    type: 3}
+  m_PrefabInstance: {fileID: 7382337600079097504}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d714c878b1d6a954a80ad1f982d9e4c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &461267013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -603,6 +615,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 286856427, guid: 08aed80938c3eab4d92d2e9d60e8bca3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 286856435, guid: 08aed80938c3eab4d92d2e9d60e8bca3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 286856435, guid: 08aed80938c3eab4d92d2e9d60e8bca3, type: 3}
+      propertyPath: scriptableEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: fe78852d9b2af8d4b9b6d108d63e29b6,
+        type: 2}
+    - target: {fileID: 461267019, guid: 08aed80938c3eab4d92d2e9d60e8bca3, type: 3}
+      propertyPath: scriptableEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 27f7fb45b7f38e24fb05b21bae482475,
+        type: 2}
+    - target: {fileID: 871000787, guid: 08aed80938c3eab4d92d2e9d60e8bca3, type: 3}
+      propertyPath: scriptableEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: e3bc08bf383a02c4aa433d79387673e6,
+        type: 2}
     - target: {fileID: 871000788, guid: 08aed80938c3eab4d92d2e9d60e8bca3, type: 3}
       propertyPath: tempScreamUI
       value: 
@@ -676,6 +711,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8215920773326055407, guid: 08aed80938c3eab4d92d2e9d60e8bca3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08aed80938c3eab4d92d2e9d60e8bca3, type: 3}
@@ -2317,10 +2357,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 44518975bfcc55f4dba3e905ecc1667a, type: 2}
   - {fileID: 11400000, guid: cdd20def5392a6544b9c3eaefb4b814e, type: 2}
   PlayerXPressGroup:
-  - {fileID: 11400000, guid: d70aac438443c35499430419c1345c5e, type: 2}
+  - {fileID: 11400000, guid: 27f7fb45b7f38e24fb05b21bae482475, type: 2}
   - {fileID: 11400000, guid: e3bc08bf383a02c4aa433d79387673e6, type: 2}
   - {fileID: 11400000, guid: f3c3c98a40f5df149b7c327556b85c6d, type: 2}
-  - {fileID: 11400000, guid: 8a2da6b15dc7e184b896a297ca3d3a6b, type: 2}
+  - {fileID: 11400000, guid: ba386ccaed7499f4aaf1fad2c0f526f7, type: 2}
   PlayerTrianglePressGroup:
   - {fileID: 11400000, guid: 5678fca6c9c00fc43989c740ae962d26, type: 2}
   - {fileID: 11400000, guid: 1b318c7627f83e84bbc22568f65fc70e, type: 2}
@@ -2900,11 +2940,28 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 36d71eb3a2e99f846833942b29cccd8d, type: 2}
+    - target: {fileID: 3559269628604505456, guid: af53f44e73d8d1541a7e836cbb7a1d44,
+        type: 3}
+      propertyPath: scriptableEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: ba386ccaed7499f4aaf1fad2c0f526f7,
+        type: 2}
     - target: {fileID: 3559269628604505463, guid: af53f44e73d8d1541a7e836cbb7a1d44,
         type: 3}
       propertyPath: tempScreamUI
       value: 
       objectReference: {fileID: 354600552}
+    - target: {fileID: 3559269629267990504, guid: af53f44e73d8d1541a7e836cbb7a1d44,
+        type: 3}
+      propertyPath: scriptableEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: ba386ccaed7499f4aaf1fad2c0f526f7,
+        type: 2}
+    - target: {fileID: 3559269629837777496, guid: af53f44e73d8d1541a7e836cbb7a1d44,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4855373767641043020, guid: af53f44e73d8d1541a7e836cbb7a1d44,
         type: 3}
       propertyPath: m_Name
@@ -2924,6 +2981,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 762492674403521506, guid: dc37056ace9c3424ab71bfcbdabc230e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 762492674973572690, guid: dc37056ace9c3424ab71bfcbdabc230e,
+        type: 3}
+      propertyPath: scriptableEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: f3c3c98a40f5df149b7c327556b85c6d,
+        type: 2}
+    - target: {fileID: 762492675369145546, guid: dc37056ace9c3424ab71bfcbdabc230e,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 762492675369145549, guid: dc37056ace9c3424ab71bfcbdabc230e,
         type: 3}
       propertyPath: tempScreamUI
@@ -3018,16 +3091,68 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6893372214007727025, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893372214987801753, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: unityEventResponse.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893372214987801753, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: unityEventResponse.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893372214987801753, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: unityEventResponse.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893372214987801753, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: unityEventResponse.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 432619944}
+    - target: {fileID: 6893372214987801753, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: unityEventResponse.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ConeCheck
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893372214987801753, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: unityEventResponse.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6893372214987801758, guid: 11ebed7d335d7164eb38f5a181dddb15,
         type: 3}
       propertyPath: tempScreamUI
       value: 
       objectReference: {fileID: 955704923}
+    - target: {fileID: 6893372215477549729, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: inputLock
+      value: 
+      objectReference: {fileID: 11400000, guid: f7bd8dfbc9554df4d96f18e667d2bdf0,
+        type: 2}
+    - target: {fileID: 6893372215651290625, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: scriptableEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: e3bc08bf383a02c4aa433d79387673e6,
+        type: 2}
     - target: {fileID: 6916293048866023777, guid: 11ebed7d335d7164eb38f5a181dddb15,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 36d71eb3a2e99f846833942b29cccd8d, type: 2}
+    - target: {fileID: 6916293048866023777, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7605899838636973582, guid: 11ebed7d335d7164eb38f5a181dddb15,
         type: 3}
       propertyPath: m_LocalPosition.x

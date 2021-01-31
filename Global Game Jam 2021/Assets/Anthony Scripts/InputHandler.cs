@@ -47,12 +47,13 @@ public class InputHandler : MonoBehaviour
             if (Input.GetButtonDown("Player " + (i + 1) + " circle"))
             {
                 PlayerCirclePressGroup[i].Raise();
+               // Debug.Log("Player " + i + " circle");
             }
 
-            if (Input.GetButtonDown("Player " + (i + 1) + " x"))
-            {
-                PlayerXPressGroup[i].Raise();
-            }
+        //    if (Input.GetButtonDown("Player " + (i + 1) + " x"))
+        //    {
+        //        PlayerXPressGroup[i].Raise();
+        //    }
 
             if (Input.GetButtonDown("Player " + (i + 1) + " triangle"))
             {
@@ -65,6 +66,29 @@ public class InputHandler : MonoBehaviour
             }
         }
 
+       if (Input.GetButtonDown("Player 1 x"))
+       {
+           PlayerXPressGroup[0].Raise();
+          // Debug.Log("Player 1 x");
+       }
+      
+       if (Input.GetButtonDown("Player 2 x"))
+       {
+           PlayerXPressGroup[1].Raise();
+           // Debug.Log("Player 2 x");
+        }
+
+       if (Input.GetButtonDown("Player 3 x"))
+       {
+           PlayerXPressGroup[2].Raise();
+           // Debug.Log("Player 3 x");
+        }
+
+       if (Input.GetButtonDown("Player 4 x"))
+       {
+           PlayerXPressGroup[3].Raise();
+          //  Debug.Log("Player 4 x");
+        }
     }
 
     void ControllerLocater()
