@@ -62,7 +62,7 @@ public class ScreamHandler : MonoBehaviour
                 screamTimer = 0;
                 isScreaming = false;
                 isCoolingDown = true;
-                inConeChecker.IsActive = false;
+               // inConeChecker.IsActive = true;
                 screamDebug.IsActive = false;
             }
         }
@@ -74,6 +74,7 @@ public class ScreamHandler : MonoBehaviour
             {
                 screamTimer = 0;
                 isCoolingDown = false;
+                inConeChecker.IsActive = false;
                 CurrentScreamLevel = 0;
             }
         }
