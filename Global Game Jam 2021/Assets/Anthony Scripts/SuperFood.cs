@@ -30,6 +30,7 @@ public class SuperFood : Food
         try
         {
             this.gameObject.GetComponent<BoxCollider>().enabled = false;
+            this.gameObject.GetComponent<MeshRenderer>().enabled = false;
         }
         catch (System.Exception)
         {

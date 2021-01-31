@@ -1,8 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using static UnityEngine.InputSystem.InputAction;
 
 public class PlayerMovementHandler : MonoBehaviour
 {
@@ -62,13 +60,6 @@ public class PlayerMovementHandler : MonoBehaviour
         //transform.Rotate((Vector3.one * value.x) * Time.deltaTime * speed);
 
         //myRB.AddForce(dir * speed, ForceMode.Force);
-    }
-
-    public void Move(CallbackContext context)
-    {
-        Vector2 m = context.ReadValue<Vector2>();
-        Vector3 dir = new Vector3(m.x, 0, m.y);
-        myRB.AddForce(dir * speed, ForceMode.Impulse);
     }
 
     // Update is called once per frame
