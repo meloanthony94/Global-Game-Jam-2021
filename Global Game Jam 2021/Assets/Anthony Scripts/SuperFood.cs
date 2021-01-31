@@ -36,7 +36,7 @@ public class SuperFood : Food
         {
             throw;
         }
-        
+
         StartCoroutine(waitToRespawn());
     }
 

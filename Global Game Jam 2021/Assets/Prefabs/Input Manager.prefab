@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3556526097501551456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3556526097501551458}
+  - component: {fileID: 3556526097501551457}
+  m_Layer: 0
+  m_Name: Input Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3556526097501551458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3556526097501551456}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3556526097501551457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3556526097501551456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10938a25dcbaae448940b28f4087e627, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerHorizontalAxisGroup:
+  - {fileID: 11400000, guid: a701d95ff8bc476438e2e8c653f630c2, type: 2}
+  - {fileID: 11400000, guid: 81469845e96ae2044873af62bd7f0598, type: 2}
+  - {fileID: 11400000, guid: 1a38ed883d23cd44b94eede4418e3ab8, type: 2}
+  - {fileID: 11400000, guid: 67bec09280be823459a3fd2b8bd60e8f, type: 2}
+  PlayerVerticalAxisGroup:
+  - {fileID: 11400000, guid: 51c98ae4f17f9a94390d4fd9600db5e0, type: 2}
+  - {fileID: 11400000, guid: 6f72b60b96c68f746a399cbc14779f3f, type: 2}
+  - {fileID: 11400000, guid: d3efd104b3e4d124baf18b0f6481a649, type: 2}
+  - {fileID: 11400000, guid: 46f55797dab754e43a6a253a19bfd6ae, type: 2}
+  PlayerCirclePressGroup:
+  - {fileID: 11400000, guid: fe78852d9b2af8d4b9b6d108d63e29b6, type: 2}
+  - {fileID: 11400000, guid: cd0c03686ff9fba4fb6a8a15f99b93f9, type: 2}
+  - {fileID: 11400000, guid: 7c9063bed8e8e87459dceb27ed7958d7, type: 2}
+  - {fileID: 11400000, guid: 95b16dd229c8d8a4aa98e1de241815e5, type: 2}
+  PlayerSquarePressGroup:
+  - {fileID: 11400000, guid: 52845a7db49ba5546881149a07d33185, type: 2}
+  - {fileID: 11400000, guid: b37011c115702a84280d456fc29b1a5a, type: 2}
+  - {fileID: 11400000, guid: 44518975bfcc55f4dba3e905ecc1667a, type: 2}
+  - {fileID: 11400000, guid: cdd20def5392a6544b9c3eaefb4b814e, type: 2}
+  PlayerXPressGroup:
+  - {fileID: 11400000, guid: d70aac438443c35499430419c1345c5e, type: 2}
+  - {fileID: 11400000, guid: e3bc08bf383a02c4aa433d79387673e6, type: 2}
+  - {fileID: 11400000, guid: f3c3c98a40f5df149b7c327556b85c6d, type: 2}
+  - {fileID: 11400000, guid: 8a2da6b15dc7e184b896a297ca3d3a6b, type: 2}
+  PlayerTrianglePressGroup:
+  - {fileID: 11400000, guid: 5678fca6c9c00fc43989c740ae962d26, type: 2}
+  - {fileID: 11400000, guid: 1b318c7627f83e84bbc22568f65fc70e, type: 2}
+  - {fileID: 11400000, guid: a05cfafed9062cd419c21decea9299ba, type: 2}
+  - {fileID: 11400000, guid: a70b14e5256ff3241b54cdc5112c2ff9, type: 2}
