@@ -85,6 +85,7 @@ public class CharacterSelectCoordinator : MonoBehaviour
     {
         if (readyBanners[playerId].activeInHierarchy == false)
         {
+            EventManager.TriggerEvent("PlayerReady", playerId);
             readyBanners[playerId].SetActive(true);
             CheckShouldEnableStartButton();
         }
@@ -114,6 +115,7 @@ public class CharacterSelectCoordinator : MonoBehaviour
         {
             if ((numberOfPlayersReady == numberOfActivePlayers))
             {
+                EventManager.TriggerEvent("NumberOfPlayers", numberOfActivePlayers);
                 startButton.SetActive(true);
             }
             else

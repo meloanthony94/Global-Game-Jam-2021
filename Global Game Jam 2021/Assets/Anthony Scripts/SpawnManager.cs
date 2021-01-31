@@ -29,9 +29,18 @@ public class SpawnManager : MonoBehaviour
 
     public List<GameObject> PlayerObjects { get => playerObjects; set => playerObjects = value; }
 
+    [SerializeField]
+    bool[] PlayerSet;
+
     void Start()
     {
         EventManager.StartListening("RespawnSuperFood", HandleRespawnSuperFoodEvent);
+        EventManager.StartListening("PlayerReady", HandlePlayReady);
+    }
+
+    public void HandlePlayReady(object index)
+    {
+        PlayerSet[(int)index] = true;
     }
 
     public void SpawnGameObjects(int numberOfPlayers)
@@ -42,11 +51,17 @@ public class SpawnManager : MonoBehaviour
 
     private void SetPlayerSpawns(int numberOfPlayers)
     {
-        Vector3[] playerPositions = playerSpawns[numberOfPlayers - 2].playerSpawnPoints;
-        for (int i = 0; i < numberOfPlayers; i++)
+        Vector3[] playerPositions = playerSpawns[numberOfPlayers - 1].playerSpawnPoints;
+        int numSpawnedPlayers = 0;
+
+        for (int i = 0; i < 4; i++)
         {
-            PlayerObjects[i].transform.localPosition = playerPositions[i];
-            PlayerObjects[i].SetActive(true);
+            if (PlayerSet[i] == true)
+            {
+                //numSpawnedPlayers++;
+                PlayerObjects[i].transform.localPosition = playerPositions[i];
+                PlayerObjects[i].SetActive(true);
+            }
         }
     }
 

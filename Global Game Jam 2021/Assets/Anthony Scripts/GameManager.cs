@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
         EventManager.StartListening("Resume", HandleResumeGameEvent);
         EventManager.StartListening("PlayerDied", HandlePlayerDeadEvent);
         EventManager.StartListening("StartGame", HandleStartGameEvent);
+        EventManager.StartListening("NumberOfPlayers", HandleSetNumberOfPlayersEvent);
 
         SetGameState(GameState.NONE);
     }
@@ -57,8 +58,6 @@ public class GameManager : MonoBehaviour
         switch (currentState)
         {
             case GameState.NONE:
-                numberOfActivePlayers = numberOfPlayers = 4;
-                StartGame();
                 break;
             case GameState.PLAY:
                 if (numberOfActivePlayers == 1)
@@ -118,6 +117,12 @@ public class GameManager : MonoBehaviour
         Debug.Log("HandleStartGameEvent()");
 
         StartGame();
+    }
+
+    private void HandleSetNumberOfPlayersEvent(object data)
+    {
+        numberOfPlayers = (int)data;
+        Debug.Log("HandleSetNumberOfPlayersEvent() with " + numberOfPlayers + " number of players");
     }
 
     public void StartGame()

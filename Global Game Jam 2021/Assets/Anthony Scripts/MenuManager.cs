@@ -19,6 +19,11 @@ public class MenuManager : MonoBehaviour
     [SerializeField]
     private GameObject resultsScreen = null;
 
+    private void Start()
+    {
+        EventManager.StartListening("EndGame", HandleEndGameEvent);
+    }
+
     public void HandlePlayButtonClicked()
     {
         Debug.Log("Play button clicked");
@@ -78,7 +83,7 @@ public class MenuManager : MonoBehaviour
         characterSelectScreen.SetActive(false);
     }
 
-    public void HandleEndGameEvent()
+    public void HandleEndGameEvent(object data)
     {
         Debug.Log("End game event has been fired off!");
 
