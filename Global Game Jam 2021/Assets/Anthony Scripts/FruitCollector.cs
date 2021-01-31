@@ -23,14 +23,23 @@ public class FruitCollector : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "BaseFood" || other.tag == "Test1")
+        if (other.tag == "BaseFood")
         {
-            myScreamHandler.IncreaseScreamLevel(1);
+            if (myScreamHandler.isCoolingDown == false && myScreamHandler.isScreaming == false)
+            {
+                Food Temp = other.GetComponent<Food>();
+                myScreamHandler.IncreaseScreamLevel(Temp.PowerValue);
+            }
             //do any neccessary logic to the food
         }
-        else if (other.tag == "SuperFood" || other.tag == "Test2")
+        else if (other.tag == "SuperFood")
         {
-            myScreamHandler.IncreaseScreamLevel(2);
+            if (myScreamHandler.isCoolingDown == false && myScreamHandler.isScreaming == false)
+            {
+                Food Temp = other.GetComponent<Food>();
+                myScreamHandler.IncreaseScreamLevel(Temp.PowerValue);
+                Temp.Consume();
+            }
             //do any neccessary logic to the food
         }
     }

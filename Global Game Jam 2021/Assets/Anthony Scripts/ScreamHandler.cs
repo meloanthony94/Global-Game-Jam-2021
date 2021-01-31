@@ -7,8 +7,10 @@ using TMPro;
 public class ScreamHandler : MonoBehaviour
 {
     [System.Serializable]
-    struct ScreamLevelData
+    public struct ScreamLevelData
     {
+        public FloatReference PushPower;
+
         public FloatReference screamAngle;
 
         public FloatReference screamRadius;
@@ -17,12 +19,13 @@ public class ScreamHandler : MonoBehaviour
     }
 
     VisibilityCone screamDebug;
+    WithinConeDetector inConeChecker;
 
     [SerializeField]
     TextMeshProUGUI tempScreamUI;
 
     [SerializeField]
-    ScreamLevelData[] ScreamDataSet;
+    public ScreamLevelData[] ScreamDataSet;
 
     [SerializeField]
     FloatReference ScreamDuration;
@@ -36,13 +39,16 @@ public class ScreamHandler : MonoBehaviour
     const int MaxScreamLevel = 3;
 
     float screamTimer = 0;
-    bool isScreaming = false;
-    bool isCoolingDown = false;
+    public bool isScreaming = false;
+    public bool isCoolingDown = false;
+
+    public int CurrentScreamLevel { get => currentScreamLevel; set => currentScreamLevel = value; }
 
     // Start is called before the first frame update
     void Start()
     {
         screamDebug = GetComponentInChildren<VisibilityCone>();
+        inConeChecker = GetComponentInChildren<WithinConeDetector>();
     }
 
     // Update is called once per frame
@@ -56,6 +62,7 @@ public class ScreamHandler : MonoBehaviour
                 screamTimer = 0;
                 isScreaming = false;
                 isCoolingDown = true;
+                inConeChecker.IsActive = false;
                 screamDebug.IsActive = false;
             }
         }
@@ -67,6 +74,7 @@ public class ScreamHandler : MonoBehaviour
             {
                 screamTimer = 0;
                 isCoolingDown = false;
+                CurrentScreamLevel = 0;
             }
         }
     }
@@ -78,37 +86,38 @@ public class ScreamHandler : MonoBehaviour
             ApplyScreamLevel();
             isScreaming = true;
             screamDebug.IsActive = true;
-            currentScreamLevel = 0;
-            tempScreamUI.text = currentScreamLevel.ToString();
+            inConeChecker.IsActive = true;
+            tempScreamUI.text = "0";
         }
     }
 
     void ApplyScreamLevel()
     {
-        screamDebug.viewRadius = ScreamDataSet[currentScreamLevel].screamRadius;
-        screamDebug.viewAngle = ScreamDataSet[currentScreamLevel].screamAngle;
+        screamDebug.viewRadius = ScreamDataSet[CurrentScreamLevel].screamRadius;
+        screamDebug.viewAngle = ScreamDataSet[CurrentScreamLevel].screamAngle;
     }
 
     public void IncreaseScreamLevel(int value)
     {
-        currentScreamLevel += value;
+        CurrentScreamLevel += value;
 
-        currentScreamLevel = Mathf.Clamp(currentScreamLevel, 0, MaxScreamLevel);
+        CurrentScreamLevel = Mathf.Clamp(CurrentScreamLevel, 0, MaxScreamLevel);
 
-        tempScreamUI.text = currentScreamLevel.ToString();
+        tempScreamUI.text = CurrentScreamLevel.ToString();
+        inConeChecker.ConeCheck();
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "BaseFood" || other.tag == "Test1")
-        {
-            IncreaseScreamLevel(1);
-            //do any neccessary logic to the food
-        }
-        else if (other.tag == "SuperFood" || other.tag == "Test2")
-        {
-            IncreaseScreamLevel(2);
-            //do any neccessary logic to the food
-        }
-    }
+  //  private void OnTriggerEnter(Collider other)
+  //  {
+  //      if (other.tag == "BaseFood" || other.tag == "Test1")
+  //      {
+  //          IncreaseScreamLevel(1);
+  //          //do any neccessary logic to the food
+  //      }
+  //      else if (other.tag == "SuperFood" || other.tag == "Test2")
+  //      {
+  //          IncreaseScreamLevel(2);
+  //          //do any neccessary logic to the food
+  //      }
+  //  }
 }
