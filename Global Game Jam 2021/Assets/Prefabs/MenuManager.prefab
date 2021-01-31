@@ -1222,7 +1222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.854902, g: 0.7254902, b: 0.5764706, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1698,7 +1698,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50.600006, y: 5}
+  m_AnchoredPosition: {x: 35, y: 34.7}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8829901997818362741
@@ -1729,7 +1729,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 06cdcbd42c47b4c4eb4831c206cb958e, type: 3}
     m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
@@ -2169,7 +2169,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 06cdcbd42c47b4c4eb4831c206cb958e, type: 3}
     m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
@@ -2739,7 +2739,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9, y: 97}
+  m_AnchoredPosition: {x: 5.4, y: 98.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8829901998191332525
@@ -2770,8 +2770,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
+    m_Font: {fileID: 12800000, guid: 06cdcbd42c47b4c4eb4831c206cb958e, type: 3}
+    m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2780,9 +2780,9 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Dino-Rumble
+  m_Text: DINO-ROAR!
 --- !u!1 &8829901998214881241
 GameObject:
   m_ObjectHideFlags: 0
@@ -2918,6 +2918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8829901998224025306}
   - component: {fileID: 8829901998493950150}
+  - component: {fileID: 1746970129}
   m_Layer: 5
   m_Name: InfoScreen
   m_TagString: Untagged
@@ -2965,6 +2966,33 @@ MonoBehaviour:
   inputX: {fileID: 11400000, guid: a701d95ff8bc476438e2e8c653f630c2, type: 2}
   buttonObjects:
   - {fileID: 8829901998332621719}
+--- !u!114 &1746970129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8829901998224025307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c535a8bd9b819d4f83ec6fefd803036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptableEvent: {fileID: 11400000, guid: d70aac438443c35499430419c1345c5e, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8829901998493950150}
+        m_MethodName: PressSelectedButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8829901998236666914
 GameObject:
   m_ObjectHideFlags: 0
@@ -3053,6 +3081,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8829901998275708640}
   - component: {fileID: 8829901998493950151}
+  - component: {fileID: 378699403}
   m_Layer: 5
   m_Name: TitleScreen
   m_TagString: Untagged
@@ -3102,6 +3131,33 @@ MonoBehaviour:
   - {fileID: 8829901997820106735}
   - {fileID: 8829901998561087157}
   - {fileID: 8829901999306363477}
+--- !u!114 &378699403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8829901998275708641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c535a8bd9b819d4f83ec6fefd803036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptableEvent: {fileID: 11400000, guid: d70aac438443c35499430419c1345c5e, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8829901998493950151}
+        m_MethodName: PressSelectedButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8829901998281371491
 GameObject:
   m_ObjectHideFlags: 0
@@ -3394,6 +3450,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8829901998333058486}
   - component: {fileID: 8829901998493950149}
+  - component: {fileID: 1848090490}
   m_Layer: 5
   m_Name: CreditsScreen
   m_TagString: Untagged
@@ -3440,6 +3497,33 @@ MonoBehaviour:
   inputX: {fileID: 11400000, guid: a701d95ff8bc476438e2e8c653f630c2, type: 2}
   buttonObjects:
   - {fileID: 8829901999497073680}
+--- !u!114 &1848090490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8829901998333058487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c535a8bd9b819d4f83ec6fefd803036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptableEvent: {fileID: 11400000, guid: d70aac438443c35499430419c1345c5e, type: 2}
+  unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8829901998493950149}
+        m_MethodName: PressSelectedButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8829901998347653443
 GameObject:
   m_ObjectHideFlags: 0
@@ -4039,7 +4123,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 06cdcbd42c47b4c4eb4831c206cb958e, type: 3}
     m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
@@ -4117,7 +4201,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 06cdcbd42c47b4c4eb4831c206cb958e, type: 3}
     m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
@@ -4343,7 +4427,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 06cdcbd42c47b4c4eb4831c206cb958e, type: 3}
     m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
