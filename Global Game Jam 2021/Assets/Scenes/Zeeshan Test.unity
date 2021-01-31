@@ -993,6 +993,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Input Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 3556526097501551457, guid: d81e50d281a60ab44872ec5b78be93f2,
+        type: 3}
+      propertyPath: PlayerXPressGroup.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 27f7fb45b7f38e24fb05b21bae482475,
+        type: 2}
+    - target: {fileID: 3556526097501551457, guid: d81e50d281a60ab44872ec5b78be93f2,
+        type: 3}
+      propertyPath: PlayerXPressGroup.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: ba386ccaed7499f4aaf1fad2c0f526f7,
+        type: 2}
     - target: {fileID: 3556526097501551458, guid: d81e50d281a60ab44872ec5b78be93f2,
         type: 3}
       propertyPath: m_LocalPosition.x
