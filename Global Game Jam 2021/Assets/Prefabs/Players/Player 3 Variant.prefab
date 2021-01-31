@@ -82,6 +82,91 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 7c9063bed8e8e87459dceb27ed7958d7,
         type: 2}
+    - target: {fileID: 6893372215651290626, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: Level0YellGroup.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893372215651290626, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: Level1YellGroup.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893372215651290626, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: Level2YellGroup.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893372215651290626, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: Level3YellGroup.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6893372215651290626, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: Level0YellGroup.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: c62bb99187fb73749a5a18251bb68977, type: 3}
+    - target: {fileID: 6893372215651290626, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: Level0YellGroup.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1ab6bc9485bfcdc43bac9303b27102cf, type: 3}
+    - target: {fileID: 6893372215651290626, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: Level0YellGroup.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 52427fad0e8beb94bafe0077259d3e85, type: 3}
+    - target: {fileID: 6893372215651290626, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: Level1YellGroup.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: c62bb99187fb73749a5a18251bb68977, type: 3}
+    - target: {fileID: 6893372215651290626, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: Level1YellGroup.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1ab6bc9485bfcdc43bac9303b27102cf, type: 3}
+    - target: {fileID: 6893372215651290626, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: Level1YellGroup.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 52427fad0e8beb94bafe0077259d3e85, type: 3}
+    - target: {fileID: 6893372215651290626, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: Level2YellGroup.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: d4febe2637db61144b95f5518a3a9336, type: 3}
+    - target: {fileID: 6893372215651290626, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: Level2YellGroup.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9f6444c337b18b04b92b12a98fc0aebb, type: 3}
+    - target: {fileID: 6893372215651290626, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: Level2YellGroup.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: dc2476b510c9b6445a99cb2ae400c313, type: 3}
+    - target: {fileID: 6893372215651290626, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: Level2YellGroup.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: b855fb79b62f6ed41bf0d837b25adb57, type: 3}
+    - target: {fileID: 6893372215651290626, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: Level3YellGroup.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: ca07259bd242ce74a892af007d3fdb4e, type: 3}
+    - target: {fileID: 6893372215651290626, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: Level3YellGroup.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6af5c48b0fd61a54c9a5e7e4a7d5f512, type: 3}
+    - target: {fileID: 6893372215651290626, guid: 11ebed7d335d7164eb38f5a181dddb15,
+        type: 3}
+      propertyPath: Level3YellGroup.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 81125fc6a58b1724cb15e9c79283fc1e, type: 3}
     - target: {fileID: 6916293048866023777, guid: 11ebed7d335d7164eb38f5a181dddb15,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
