@@ -27,6 +27,8 @@ public class SpawnManager : MonoBehaviour
 
     static Random rng = new Random();
 
+    public List<GameObject> PlayerObjects { get => playerObjects; set => playerObjects = value; }
+
     void Start()
     {
         EventManager.StartListening("RespawnSuperFood", HandleRespawnSuperFoodEvent);
@@ -43,8 +45,8 @@ public class SpawnManager : MonoBehaviour
         Vector3[] playerPositions = playerSpawns[numberOfPlayers - 2].playerSpawnPoints;
         for (int i = 0; i < numberOfPlayers; i++)
         {
-            playerObjects[i].transform.localPosition = playerPositions[i];
-            playerObjects[i].SetActive(true);
+            PlayerObjects[i].transform.localPosition = playerPositions[i];
+            PlayerObjects[i].SetActive(true);
         }
     }
 
@@ -56,7 +58,7 @@ public class SpawnManager : MonoBehaviour
 
     public void SpawnSuperFood()
     {
-        Debug.Assert(numberOfSuperFood < superFoodObjects.Count, "Number of super food objects to spawn is greater than the number of objects available!");
+        Debug.Assert(numberOfSuperFood <= superFoodObjects.Count, "Number of super food objects to spawn is greater than the number of objects available!");
 
         var randomIndicies = GetRandomIndicies(numberOfSuperFood);
         for (int i = 0; i < numberOfSuperFood; i++)
@@ -117,7 +119,7 @@ public class SpawnManager : MonoBehaviour
 
     public void TogglePlayer(int playerId, bool toggle)
     {
-        playerObjects[playerId].SetActive(toggle);
+        PlayerObjects[playerId].SetActive(toggle);
     }
 
     private IEnumerator GetRandomValue(HashSet<int> hash, int randomValue, int count)

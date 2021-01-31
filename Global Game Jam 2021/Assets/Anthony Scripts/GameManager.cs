@@ -41,11 +41,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (stateChanged)
-        {
-            stateChanged = false;
-            Process();
-        }
+        Process();
     }
 
     private void SetGameState(GameState state)
@@ -62,6 +58,7 @@ public class GameManager : MonoBehaviour
         {
             case GameState.NONE:
                 numberOfActivePlayers = numberOfPlayers = 4;
+                StartGame();
                 break;
             case GameState.PLAY:
                 if (numberOfActivePlayers == 1)
@@ -73,9 +70,22 @@ public class GameManager : MonoBehaviour
                 return;
             case GameState.END:
                 // Display win screen
+                EventManager.TriggerEvent("EndGame");
+                CheckWhoWon();
                 break;
             default:
                 break;
+        }
+    }
+
+    void CheckWhoWon()
+    {
+        for (int i = 0; i < spManager.PlayerObjects.Count; i++)
+        {
+            if (spManager.PlayerObjects[i].activeInHierarchy == true)
+            {
+                Debug.Log("Game Over! Player " + (i+1) + " wins!");
+            }
         }
     }
 

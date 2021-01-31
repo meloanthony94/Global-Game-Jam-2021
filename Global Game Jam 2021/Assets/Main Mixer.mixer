@@ -1,5 +1,38 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!244 &-8826218211431965214
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 5a6814a18218190499e6a29c0c369ace
+  m_EffectName: Attenuation
+  m_MixLevel: bc1445331c2c1064ab8e3d0d91114e81
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!243 &-5067951448505219561
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Food
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 616d63b0353b9274f9ed1166d215fed7
+  m_Children: []
+  m_Volume: 4f32848f898af204f9b512358a081d63
+  m_Pitch: 8531124a6fe0cb64da4d9dcd73fa7315
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -8826218211431965214}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
@@ -20,6 +53,7 @@ AudioMixerController:
   - guids:
     - 4b380c25c90b56943b880345acce7d97
     - 3659beeec6be83649b48812532b0b29d
+    - 616d63b0353b9274f9ed1166d215fed7
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -34,6 +68,7 @@ AudioMixerGroupController:
   m_GroupID: 4b380c25c90b56943b880345acce7d97
   m_Children:
   - {fileID: 5391291623337521008}
+  - {fileID: -5067951448505219561}
   m_Volume: d00ad047429c8e74f90adfa1e9f9f882
   m_Pitch: 5f83e85e629bf8648a63151167563902
   m_Send: 00000000000000000000000000000000

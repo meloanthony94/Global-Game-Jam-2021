@@ -444,6 +444,7 @@ GameObject:
   - component: {fileID: 286856427}
   - component: {fileID: 286856435}
   - component: {fileID: 286856436}
+  - component: {fileID: 1751816004}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Player
@@ -616,6 +617,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eatingCooldownTime: {fileID: 11400000, guid: 190e2653fba95ef44a557f37eccf6d9e, type: 2}
+--- !u!114 &1751816004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101736789190655052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dee6bfe059bd96458845de46fb6ae8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7303019645943014652
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,7 +875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c535a8bd9b819d4f83ec6fefd803036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scriptableEvent: {fileID: 11400000, guid: d70aac438443c35499430419c1345c5e, type: 2}
+  scriptableEvent: {fileID: 11400000, guid: 27f7fb45b7f38e24fb05b21bae482475, type: 2}
   unityEventResponse:
     m_PersistentCalls:
       m_Calls:
@@ -972,7 +985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c535a8bd9b819d4f83ec6fefd803036, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scriptableEvent: {fileID: 11400000, guid: d70aac438443c35499430419c1345c5e, type: 2}
+  scriptableEvent: {fileID: 11400000, guid: 27f7fb45b7f38e24fb05b21bae482475, type: 2}
   unityEventResponse:
     m_PersistentCalls:
       m_Calls:

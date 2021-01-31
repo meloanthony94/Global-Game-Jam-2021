@@ -42,7 +42,7 @@ public class CharacterSFXHandler : MonoBehaviour
 
     public void SelectYellGroup()
     {
-        if (myScreamHandle.isScreaming == true || myScreamHandle.isCoolingDown == true)
+        if (myScreamHandle.isScreaming == false && myScreamHandle.isCoolingDown == false)
        {
             switch (myScreamHandle.CurrentScreamLevel)
             {

@@ -8,6 +8,7 @@ TagManager:
   - Test2
   - SuperFood
   - BaseFood
+  - Hazard
   layers:
   - Default
   - TransparentFX

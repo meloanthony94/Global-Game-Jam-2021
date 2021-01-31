@@ -87,7 +87,7 @@ public class InputHandler : MonoBehaviour
        if (Input.GetButtonDown("Player 4 x"))
        {
            PlayerXPressGroup[3].Raise();
-          //  Debug.Log("Player 4 x");
+          //tt  Debug.Log("Player 4 x");
         }
     }
 
