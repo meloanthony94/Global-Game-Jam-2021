@@ -19,10 +19,6 @@ public class MenuInputController : MonoBehaviour
 
     private void Start()
     {
-        for (int i = 0; i < buttonObjects.Count; i++)
-        {
-            buttonObjects[i].onClick.AddListener(PressSelectedButton);
-        }
     }
 
     // Update is called once per frame
@@ -57,6 +53,12 @@ public class MenuInputController : MonoBehaviour
     {
         Debug.Log("Button Pressed!");
 
+        if (highlightedObjectIndex >= 0 && highlightedObjectIndex < buttonObjects.Count)
+        {
+            //buttonObjects[highlightedObjectIndex].Select();
+           // buttonObjects[highlightedObjectIndex].OnSelect(null);
+            buttonObjects[highlightedObjectIndex].onClick.Invoke();
+        }
         //buttonObjects[highlightedObjectIndex].Invoke("OnClick", 0.1f);
     }
 }

@@ -77,4 +77,21 @@ public class MenuManager : MonoBehaviour
         titleScreen.SetActive(true);
         characterSelectScreen.SetActive(false);
     }
+
+    public void HandleEndGameEvent()
+    {
+        Debug.Log("End game event has been fired off!");
+
+        resultsScreen.SetActive(true);
+        gameScreen.SetActive(false);
+    }
+
+    public void HandleExitResultsScreenButtonClicked()
+    {
+        Debug.Log("Exit results button clicked");
+
+        titleScreen.SetActive(true);
+        resultsScreen.SetActive(false);
+    }
+
 }

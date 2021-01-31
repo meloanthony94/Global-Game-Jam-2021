@@ -9,6 +9,9 @@ public class CharacterSelectCoordinator : MonoBehaviour
     [SerializeField]
     private List<GameObject> readyBanners = new List<GameObject>();
 
+    [SerializeField]
+    private GameObject startButton = new GameObject();
+
     public void Start()
     {
         EventManager.StartListening("ExitCharacterSelection", HandleExitCharacterScreenEvent);
@@ -29,6 +32,7 @@ public class CharacterSelectCoordinator : MonoBehaviour
         {
             characterSlots[i].SetActive(false);
         }
+        startButton.SetActive(false);
     }
 
     public void HandleExitCharacterScreenEvent(object data)
@@ -38,10 +42,7 @@ public class CharacterSelectCoordinator : MonoBehaviour
 
     public void PlayerOnePressX()
     {
-        if (readyBanners[0].activeInHierarchy == false)
-        {
-            readyBanners[0].SetActive(true);
-        }
+        PlayerReadyPressed(0);
     }
 
     public void PlayerTwoPressX()
@@ -50,9 +51,9 @@ public class CharacterSelectCoordinator : MonoBehaviour
         {
             characterSlots[0].SetActive(true);
         }
-        else if (readyBanners[1].activeInHierarchy == false)
+        else
         {
-            readyBanners[1].SetActive(true);
+            PlayerReadyPressed(1);
         }
     }
 
@@ -62,9 +63,9 @@ public class CharacterSelectCoordinator : MonoBehaviour
         {
             characterSlots[1].SetActive(true);
         }
-        else if (readyBanners[2].activeInHierarchy == false)
+        else
         {
-            readyBanners[2].SetActive(true);
+            PlayerReadyPressed(2);
         }
     }
 
@@ -74,9 +75,51 @@ public class CharacterSelectCoordinator : MonoBehaviour
         {
             characterSlots[2].SetActive(true);
         }
-        else if (readyBanners[3].activeInHierarchy == false)
+        else
         {
-            readyBanners[3].SetActive(true);
+            PlayerReadyPressed(3);
+        }
+    }
+
+    private void PlayerReadyPressed(int playerId)
+    {
+        if (readyBanners[playerId].activeInHierarchy == false)
+        {
+            readyBanners[playerId].SetActive(true);
+            CheckShouldEnableStartButton();
+        }
+    }
+
+    private void CheckShouldEnableStartButton()
+    {
+        int numberOfActivePlayers = 1;
+        for (int i = 0; i < characterSlots.Count; i++)
+        {
+            if (characterSlots[i].activeInHierarchy)
+            {
+                numberOfActivePlayers++;
+            }
+        }
+
+        int numberOfPlayersReady = 0;
+        for (int i = 0; i < readyBanners.Count; i++)
+        {
+            if (readyBanners[i].activeInHierarchy)
+            {
+                numberOfPlayersReady++;
+            }
+        }
+
+        if (numberOfActivePlayers > 1)
+        {
+            if ((numberOfPlayersReady == numberOfActivePlayers))
+            {
+                startButton.SetActive(true);
+            }
+            else
+            {
+                startButton.SetActive(false);
+            }
         }
     }
 }
