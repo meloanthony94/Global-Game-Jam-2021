@@ -72,6 +72,8 @@ public class MenuManager : MonoBehaviour
     {
         Debug.Log("Exit character select button clicked");
 
+        EventManager.TriggerEvent("ExitCharacterSelection", 0);
+
         titleScreen.SetActive(true);
         characterSelectScreen.SetActive(false);
     }
