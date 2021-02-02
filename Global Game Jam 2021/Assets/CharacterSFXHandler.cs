@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CharacterSFXHandler : MonoBehaviour
 {
+    CharacterAnimationHandler myAnimHandler;
+
     [SerializeField]
     ScreamHandler myScreamHandle;
 
@@ -24,9 +26,10 @@ public class CharacterSFXHandler : MonoBehaviour
     AudioClip[] Level3YellGroup;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         myAudioSource = GetComponent<AudioSource>();
+        myAnimHandler = GetComponent<CharacterAnimationHandler>();
     }
 
     // Update is called once per frame
@@ -72,6 +75,7 @@ public class CharacterSFXHandler : MonoBehaviour
     {
         int index = Random.Range(0, clips.Length);
         myAudioSource.clip = clips[index];
+        myAnimHandler?.BeginYell(myAudioSource.clip.length);
 
         Yell();
     }

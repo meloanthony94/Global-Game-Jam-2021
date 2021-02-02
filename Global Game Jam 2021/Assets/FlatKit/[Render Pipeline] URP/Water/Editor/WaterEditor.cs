@@ -3,7 +3,7 @@ using System.IO;
 using System.Text.RegularExpressions;
 using FlatKit.Water;
 using UnityEditor;
-//using UnityEditor.Rendering.PostProcessing;
+using UnityEditor.Rendering.Universal;
 using UnityEngine;
 
 public class FlatKitWaterEditor : ShaderGUI {
@@ -65,10 +65,10 @@ public class FlatKitWaterEditor : ShaderGUI {
                 GUILayout.Space(-50);
                 using (new EditorGUILayout.HorizontalScope()) {
                     GUILayout.Space(15);
-                   // if (GUILayout.Button(EditorUtilities.GetContent("Reset|Clear gradient texture."),
-                   //     EditorStyles.miniButtonLeft, GUILayout.Width(60f), GUILayout.ExpandWidth(false))) {
-                   //     property.textureValue = null;
-                   // }
+                    //if (GUILayout.Button(EditorUtilities.GetContent("Reset|Clear gradient texture."),
+                    //    EditorStyles.miniButtonLeft, GUILayout.Width(60f), GUILayout.ExpandWidth(false))) {
+                    //    property.textureValue = null;
+                    //}
 
                     GUILayout.FlexibleSpace();
                 }

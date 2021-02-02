@@ -32,10 +32,40 @@ public class SpawnManager : MonoBehaviour
     [SerializeField]
     bool[] PlayerSet;
 
+    //
+    List<int> superFoodIndexList = new List<int>();
+    int superFoodrandomValue = -1;
+    bool generatingSperFoodSpawns = false;
+
     void Start()
     {
         EventManager.StartListening("RespawnSuperFood", HandleRespawnSuperFoodEvent);
         EventManager.StartListening("PlayerReady", HandlePlayReady);
+    }
+
+    private void Update()
+    {
+        if (generatingSperFoodSpawns)
+        {
+            if (superFoodrandomValue == -1)
+                superFoodIndexList.Clear();
+            
+                superFoodrandomValue = Random.Range(0, numberOfSuperFood);
+
+            if (superFoodIndexList.Contains(superFoodrandomValue) == false)
+            {
+                superFoodIndexList.Add(superFoodrandomValue);
+            }
+
+
+            if (superFoodIndexList.Count == numberOfSuperFood)
+            {
+                superFoodrandomValue = -1;
+                generatingSperFoodSpawns = false;
+                //call func
+                SpawnSuperFood();
+            }
+        }
     }
 
     public void HandlePlayReady(object index)
@@ -58,16 +88,32 @@ public class SpawnManager : MonoBehaviour
         {
             if (PlayerSet[i] == true)
             {
-                //numSpawnedPlayers++;
-                PlayerObjects[i].transform.localPosition = playerPositions[i];
+                numSpawnedPlayers++;
+                PlayerObjects[i].transform.localPosition = playerPositions[numSpawnedPlayers];
                 PlayerObjects[i].SetActive(true);
+            }
+            else
+            {
+                EventManager.TriggerEvent("TurnOffASprite", i);
+            }
+        }
+    }
+
+    public void UpdatePlayerSpirtes()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            if (PlayerSet[i] == false)
+            {
+                EventManager.TriggerEvent("TurnOffASprite", i);
             }
         }
     }
 
     private void SpawnFood()
     {
-        SpawnSuperFood();
+        //SpawnSuperFood();
+        generatingSperFoodSpawns = true;
         SpawnBaseFood();
     }
 
@@ -75,14 +121,14 @@ public class SpawnManager : MonoBehaviour
     {
         Debug.Assert(numberOfSuperFood <= superFoodObjects.Count, "Number of super food objects to spawn is greater than the number of objects available!");
 
-        var randomIndicies = GetRandomIndicies(numberOfSuperFood);
+        //var randomIndicies = GetRandomIndicies(numberOfSuperFood);
         for (int i = 0; i < numberOfSuperFood; i++)
         {
-            SuperFood.SuperFoodData data = new SuperFood.SuperFoodData(i, randomIndicies[i]);
+            SuperFood.SuperFoodData data = new SuperFood.SuperFoodData(i, superFoodIndexList[i]);
             superFoodObjects[i].GetComponent<SuperFood>().Data = data;
             superFoodPositions.Add(data.position);
 
-            superFoodObjects[i].transform.localPosition = superFoodSpawns.playerSpawnPoints[randomIndicies[i]];
+            superFoodObjects[i].transform.localPosition = superFoodSpawns.playerSpawnPoints[superFoodIndexList[i]];
             superFoodObjects[i].SetActive(true);
         }
     }
@@ -130,6 +176,8 @@ public class SpawnManager : MonoBehaviour
         }
 
         return result;
+
+        
     }
 
     public void TogglePlayer(int playerId, bool toggle)

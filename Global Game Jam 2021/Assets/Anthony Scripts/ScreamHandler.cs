@@ -22,9 +22,6 @@ public class ScreamHandler : MonoBehaviour
     WithinConeDetector inConeChecker;
 
     [SerializeField]
-    TextMeshProUGUI tempScreamUI;
-
-    [SerializeField]
     public ScreamLevelData[] ScreamDataSet;
 
     [SerializeField]
@@ -44,8 +41,10 @@ public class ScreamHandler : MonoBehaviour
 
     public int CurrentScreamLevel { get => currentScreamLevel; set => currentScreamLevel = value; }
 
+    public int ID = 0;
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         screamDebug = GetComponentInChildren<VisibilityCone>();
         inConeChecker = GetComponentInChildren<WithinConeDetector>();
@@ -84,28 +83,35 @@ public class ScreamHandler : MonoBehaviour
     {
         if (isCoolingDown == false && isScreaming == false)
         {
+            EventManager.TriggerEvent("Scream", ID);
             ApplyScreamLevel();
             isScreaming = true;
             screamDebug.IsActive = true;
             inConeChecker.IsActive = true;
-            tempScreamUI.text = "0";
         }
     }
 
     void ApplyScreamLevel()
     {
-        screamDebug.viewRadius = ScreamDataSet[CurrentScreamLevel].screamRadius;
-        screamDebug.viewAngle = ScreamDataSet[CurrentScreamLevel].screamAngle;
+        if (screamDebug)
+        {
+            screamDebug.viewRadius = ScreamDataSet[CurrentScreamLevel].screamRadius;
+            screamDebug.viewAngle = ScreamDataSet[CurrentScreamLevel].screamAngle;
+        }
     }
 
     public void IncreaseScreamLevel(int value)
     {
         CurrentScreamLevel += value;
 
+        for (int i = 0; i < value; i++)
+        {
+            EventManager.TriggerEvent("ScreamLevelChanged", ID);
+        }
+
         CurrentScreamLevel = Mathf.Clamp(CurrentScreamLevel, 0, MaxScreamLevel);
 
-        tempScreamUI.text = CurrentScreamLevel.ToString();
-        inConeChecker.ConeCheck();
+        //inConeChecker.ConeCheck();
     }
 
   //  private void OnTriggerEnter(Collider other)

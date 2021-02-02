@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
@@ -18,6 +19,10 @@ public class MenuManager : MonoBehaviour
     private GameObject gameScreen = null;
     [SerializeField]
     private GameObject resultsScreen = null;
+
+    int winningPlayer = -1;
+
+    public int WinningPlayer { get => winningPlayer; set => winningPlayer = value; }
 
     private void Start()
     {
@@ -68,6 +73,7 @@ public class MenuManager : MonoBehaviour
     {
         Debug.Log("Start button clicked");
         EventManager.TriggerEvent("StartGame", 0);
+        EventManager.TriggerEvent("ExitCharacterSelection", 0);
 
         gameScreen.SetActive(true);
         characterSelectScreen.SetActive(false);
@@ -87,8 +93,12 @@ public class MenuManager : MonoBehaviour
     {
         Debug.Log("End game event has been fired off!");
 
+        winningPlayer = (int)data;
+
         resultsScreen.SetActive(true);
         gameScreen.SetActive(false);
+
+
     }
 
     public void HandleExitResultsScreenButtonClicked()
@@ -97,6 +107,8 @@ public class MenuManager : MonoBehaviour
 
         titleScreen.SetActive(true);
         resultsScreen.SetActive(false);
+
+        SceneManager.LoadScene(0);
     }
 
 }

@@ -86,6 +86,90 @@ TextureImporter:
   - first:
       213: 5244378584849333600
     second: UI Buttons (1)_27
+  - first:
+      213: 6981602754286528186
+    second: UI Buttons (1)_0
+  - first:
+      213: -8539335803341687020
+    second: UI Buttons (1)_1
+  - first:
+      213: -4279455349977483997
+    second: UI Buttons (1)_2
+  - first:
+      213: -6209149155178041158
+    second: UI Buttons (1)_3
+  - first:
+      213: -5978531387923018232
+    second: UI Buttons (1)_4
+  - first:
+      213: 3799781069949689452
+    second: UI Buttons (1)_5
+  - first:
+      213: -1213960023030781604
+    second: UI Buttons (1)_6
+  - first:
+      213: -6880285682039550171
+    second: UI Buttons (1)_7
+  - first:
+      213: -7914871352108756580
+    second: UI Buttons (1)_8
+  - first:
+      213: 4473888334442068057
+    second: UI Buttons (1)_9
+  - first:
+      213: -3979652540511549696
+    second: UI Buttons (1)_10
+  - first:
+      213: -1842397311626302528
+    second: UI Buttons (1)_11
+  - first:
+      213: 2740254691241642289
+    second: UI Buttons (1)_12
+  - first:
+      213: 2978240699932628862
+    second: UI Buttons (1)_13
+  - first:
+      213: -5186274113235369647
+    second: UI Buttons (1)_14
+  - first:
+      213: 7846828106804316713
+    second: UI Buttons (1)_15
+  - first:
+      213: -7545279160939195848
+    second: UI Buttons (1)_16
+  - first:
+      213: -3842338160104020291
+    second: UI Buttons (1)_17
+  - first:
+      213: 880290087103063021
+    second: UI Buttons (1)_18
+  - first:
+      213: -5397589576779717627
+    second: UI Buttons (1)_19
+  - first:
+      213: -8313593797140114926
+    second: UI Buttons (1)_20
+  - first:
+      213: 2294183220707309166
+    second: UI Buttons (1)_21
+  - first:
+      213: 4824436753139378535
+    second: UI Buttons (1)_22
+  - first:
+      213: -2969660638368307353
+    second: UI Buttons (1)_23
+  - first:
+      213: -3742640771754070744
+    second: UI Buttons (1)_24
+  - first:
+      213: -7565241808556243605
+    second: UI Buttons (1)_25
+  - first:
+      213: 5784702329147923603
+    second: UI Buttons (1)_26
+  - first:
+      213: 2858645200684235765
+    second: UI Buttons (1)_27
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -148,7 +232,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -160,7 +244,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -184,7 +268,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -197,6 +281,18 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0

@@ -5,15 +5,20 @@ using UnityEngine;
 public class CharacterSelectCoordinator : MonoBehaviour
 {
     [SerializeField]
-    private List<GameObject> characterSlots = new List<GameObject>();
+    private List<GameObject> characterSlots;// = new List<GameObject>();
     [SerializeField]
-    private List<GameObject> readyBanners = new List<GameObject>();
+    private List<GameObject> readyBanners;// = new List<GameObject>();
 
     [SerializeField]
-    private GameObject startButton = new GameObject();
+    private GameObject startButton;// = new GameObject();
+
 
     public void Start()
     {
+       // characterSlots = new List<GameObject>();
+       // readyBanners = new List<GameObject>();
+       // startButton = new GameObject();
+
         EventManager.StartListening("ExitCharacterSelection", HandleExitCharacterScreenEvent);
     }
 

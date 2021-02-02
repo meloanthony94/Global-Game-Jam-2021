@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,6 +27,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private SpawnManager spManager = null;
+
+    [SerializeField]
+    UnityEvent VictoryEvent;
 
     // Start is called before the first frame update
     void Start()
@@ -64,28 +68,33 @@ public class GameManager : MonoBehaviour
                 {
                     SetGameState(GameState.END);
                 }
+                spManager.UpdatePlayerSpirtes();
                 break;
             case GameState.PAUSE:
                 return;
             case GameState.END:
                 // Display win screen
-                EventManager.TriggerEvent("EndGame");
-                CheckWhoWon();
+                VictoryEvent.Invoke();
+                EventManager.TriggerEvent("EndGame", CheckWhoWon());
+                SetGameState(GameState.NONE);
                 break;
             default:
                 break;
         }
     }
 
-    void CheckWhoWon()
+    int CheckWhoWon()
     {
         for (int i = 0; i < spManager.PlayerObjects.Count; i++)
         {
             if (spManager.PlayerObjects[i].activeInHierarchy == true)
             {
                 Debug.Log("Game Over! Player " + (i+1) + " wins!");
+                return i;
             }
         }
+
+        return -1;
     }
 
     private void HandlePauseGameEvent(object data)

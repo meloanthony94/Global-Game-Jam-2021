@@ -9,6 +9,9 @@ public class FruitCollector : MonoBehaviour
     [SerializeField]
     FloatReference eatingCooldownTime;
 
+    float eatTimer = 0;
+    bool iseating = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,27 +21,44 @@ public class FruitCollector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (iseating)
+        {
+            eatTimer += Time.deltaTime;
+
+            if (eatTimer >= eatingCooldownTime.Value)
+            {
+                iseating = false;
+                eatTimer = 0;
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "BaseFood")
         {
-            if (myScreamHandler.isCoolingDown == false && myScreamHandler.isScreaming == false)
+            if (iseating == false)
             {
-                Food Temp = other.GetComponent<Food>();
-                myScreamHandler.IncreaseScreamLevel(Temp.PowerValue);
+                if (myScreamHandler.isCoolingDown == false && myScreamHandler.isScreaming == false)
+                {
+                    iseating = true;
+                    Food Temp = other.GetComponent<Food>();
+                    myScreamHandler.IncreaseScreamLevel(Temp.PowerValue);
+                }
             }
             //do any neccessary logic to the food
         }
         else if (other.tag == "SuperFood")
         {
-            if (myScreamHandler.isCoolingDown == false && myScreamHandler.isScreaming == false)
+            if (iseating == false)
             {
-                Food Temp = other.GetComponent<Food>();
-                myScreamHandler.IncreaseScreamLevel(Temp.PowerValue);
-                Temp.Consume();
+                if (myScreamHandler.isCoolingDown == false && myScreamHandler.isScreaming == false)
+                {
+                    iseating = true;
+                    Food Temp = other.GetComponent<Food>();
+                    myScreamHandler.IncreaseScreamLevel(Temp.PowerValue);
+                    Temp.Consume();
+                }
             }
             //do any neccessary logic to the food
         }

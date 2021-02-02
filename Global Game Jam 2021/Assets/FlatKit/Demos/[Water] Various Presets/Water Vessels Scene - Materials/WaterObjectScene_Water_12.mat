@@ -22,7 +22,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: WaterObjectScene_Water_12
   m_Shader: {fileID: 4800000, guid: efcaf526ceb1f4efd9eb4e4c30c6ade6, type: 3}
-  m_ShaderKeywords: _ALLOWALPHAOVERFLOW_OFF _COLORMODE_GRADIENT_TEXTURE _FOAMMODE_GRADIENT_NOISE
+  m_ShaderKeywords: _ALLOWALPHAOVERFLOW_OFF _COLORMODE_LINEAR _FOAMMODE_GRADIENT_NOISE
     _WAVEMODE_NONE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -78,7 +78,7 @@ Material:
     - _BumpScale: 1
     - _CameraDistanceFadeClose: 0
     - _CameraDistanceFadeFar: 10
-    - _ColorMode: 1
+    - _ColorMode: 0
     - _CrestSharpness: 0
     - _CrestSize: 0.14
     - _Cull: 2
@@ -138,13 +138,12 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0, g: 1, b: 0.7287984, a: 1}
-    - _ColorDeep: {r: 0.36470586, g: 0.52607304, b: 0.8862745, a: 1}
-    - _ColorShallow: {r: 0.33236915, g: 0.7091983, b: 0.9150943, a: 1}
+    - _ColorDeep: {r: 1, g: 0, b: 0.18196487, a: 1}
+    - _ColorShallow: {r: 1, g: 0.32040966, b: 0, a: 1}
     - _ColorTop: {r: 1, g: 1, b: 1, a: 0.4392157}
-    - _CrestColor: {r: 1, g: 1, b: 1, a: 0.9}
+    - _CrestColor: {r: 0.7924528, g: 0.16308124, b: 0, a: 0.9}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FoamColor: {r: 1, g: 1, b: 1, a: 0.8235294}
+    - _FoamColor: {r: 1, g: 0.020871071, b: 0, a: 0.8235294}
     - _FoamStretch: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []

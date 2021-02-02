@@ -30,6 +30,7 @@ public class PlayerStateTracker : MonoBehaviour
         EventManager.StartListening("PlayerDied", HandlePlayerDeadEvent);
         EventManager.StartListening("ScreamLevelChanged", HandleScreamLevelChangedEvent);
         EventManager.StartListening("Scream", HandleScreamEvent);
+        EventManager.StartListening("TurnOffASprite", HandleTurnOffASprite);
     }
 
     private void HandlePlayerDeadEvent(object data)
@@ -39,6 +40,17 @@ public class PlayerStateTracker : MonoBehaviour
         if (eventPlayerID == playerId)
         {
             spriteRenderer.sprite = playerDeadSprite;
+        }
+    }
+
+    private void HandleTurnOffASprite(object data)
+    {
+        int eventPlayerID = (int)data;
+
+        if (eventPlayerID == playerId)
+        {
+            spriteRenderer.sprite = playerDeadSprite;
+            screamLevelSpriteRenderer.enabled = false;
         }
     }
 

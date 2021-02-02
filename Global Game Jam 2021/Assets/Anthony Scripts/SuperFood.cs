@@ -35,7 +35,7 @@ public class SuperFood : Food
         {
             ConsumeEvent.Invoke();
             this.gameObject.GetComponent<BoxCollider>().enabled = false;
-            this.gameObject.GetComponent<MeshRenderer>().enabled = false;
+            this.gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
         }
         catch (System.Exception)
         {
@@ -56,7 +56,7 @@ public class SuperFood : Food
                 EventManager.TriggerEvent("RespawnSuperFood", data.id);
                 respawnTimer = 2.0f;
                 this.gameObject.GetComponent<BoxCollider>().enabled = true;
-                this.gameObject.GetComponent<MeshRenderer>().enabled = true;
+                this.gameObject.GetComponentInChildren<MeshRenderer>().enabled = true;
 
                 yield break;
             }
