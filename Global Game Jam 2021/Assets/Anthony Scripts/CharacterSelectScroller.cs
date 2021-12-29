@@ -18,7 +18,10 @@ public class CharacterSelectScroller : MonoBehaviour
     private CharacterSelectCoordinator coordinator;
 
     [SerializeField]
-    private int playerId = -1;
+    private int playerId = 0;
+
+    [SerializeField]
+    FloatReference characterSelection;
 
     private int highlightedObjectIndex = 0;
 
@@ -42,8 +45,10 @@ public class CharacterSelectScroller : MonoBehaviour
                     highlightedObjectIndex = -1;
                 }
 
+              
                 if (highlightedObjectIndex >= 0 && highlightedObjectIndex < characterSprites.Count)
                 {
+                    SetChoice(highlightedObjectIndex);
                     spriteRenderer.sprite = characterSprites[highlightedObjectIndex];
                 }
 
@@ -54,5 +59,10 @@ public class CharacterSelectScroller : MonoBehaviour
         {
             timer -= Time.deltaTime;
         }
+    }
+
+    public void SetChoice(float index)
+    {
+        characterSelection.Value = index;
     }
 }

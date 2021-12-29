@@ -5,15 +5,22 @@ using UnityEngine;
 public class CharacterSelectCoordinator : MonoBehaviour
 {
     [SerializeField]
-    private List<GameObject> characterSlots = new List<GameObject>();
+    private List<GameObject> characterSlots;// = new List<GameObject>();
     [SerializeField]
-    private List<GameObject> readyBanners = new List<GameObject>();
+    private List<GameObject> readyBanners;// = new List<GameObject>();
 
     [SerializeField]
-    private GameObject startButton = new GameObject();
+    private GameObject startButton;// = new GameObject();
+
+
+    int readyPlayers = 0;
 
     public void Start()
     {
+       // characterSlots = new List<GameObject>();
+       // readyBanners = new List<GameObject>();
+       // startButton = new GameObject();
+
         EventManager.StartListening("ExitCharacterSelection", HandleExitCharacterScreenEvent);
     }
 
@@ -33,6 +40,7 @@ public class CharacterSelectCoordinator : MonoBehaviour
             characterSlots[i].SetActive(false);
         }
         startButton.SetActive(false);
+        readyPlayers = 0;
     }
 
     public void HandleExitCharacterScreenEvent(object data)
@@ -81,45 +89,55 @@ public class CharacterSelectCoordinator : MonoBehaviour
         }
     }
 
-    private void PlayerReadyPressed(int playerId)
+    public  void PlayerReadyPressed(int playerId)
     {
-        if (readyBanners[playerId].activeInHierarchy == false)
-        {
-            readyBanners[playerId].SetActive(true);
+        //if (readyBanners[playerId].activeInHierarchy == false)
+        //{
+            EventManager.TriggerEvent("PlayerReady", playerId);
+            readyPlayers++;
+         //   readyBanners[playerId].SetActive(true);
             CheckShouldEnableStartButton();
-        }
+        //}
     }
 
     private void CheckShouldEnableStartButton()
     {
-        int numberOfActivePlayers = 1;
-        for (int i = 0; i < characterSlots.Count; i++)
-        {
-            if (characterSlots[i].activeInHierarchy)
-            {
-                numberOfActivePlayers++;
-            }
-        }
+       //int numberOfActivePlayers = 1;
+       //for (int i = 0; i < characterSlots.Count; i++)
+       //{
+       //    if (characterSlots[i].activeInHierarchy)
+       //    {
+       //        numberOfActivePlayers++;
+       //    }
+       //}
+       //
+       //int numberOfPlayersReady = 0;
+       //for (int i = 0; i < readyBanners.Count; i++)
+       //{
+       //    if (readyBanners[i].activeInHierarchy)
+       //    {
+       //        numberOfPlayersReady++;
+       //    }
+       //}
 
-        int numberOfPlayersReady = 0;
-        for (int i = 0; i < readyBanners.Count; i++)
-        {
-            if (readyBanners[i].activeInHierarchy)
-            {
-                numberOfPlayersReady++;
-            }
-        }
+        //if (numberOfActivePlayers > 1)
+        //{
+        //    if ((numberOfPlayersReady == numberOfActivePlayers))
+        //    {
+        //        EventManager.TriggerEvent("NumberOfPlayers", numberOfActivePlayers);
+        //        startButton.SetActive(true);
+        //    }
+        //    else
+        //    {
+        //        startButton.SetActive(false);
+        //    }
+        //}
 
-        if (numberOfActivePlayers > 1)
+        if (readyPlayers > 1)
         {
-            if ((numberOfPlayersReady == numberOfActivePlayers))
-            {
-                startButton.SetActive(true);
-            }
-            else
-            {
-                startButton.SetActive(false);
-            }
+
+            EventManager.TriggerEvent("NumberOfPlayers", readyPlayers);
+            startButton.SetActive(true);
         }
     }
 }

@@ -13,14 +13,18 @@ public class Dash : MonoBehaviour
     FloatReference DashSpeed;
     [SerializeField]
     FloatReference DashDuration;
+    [SerializeField]
+    FloatReference DashCooldown;
 
     [SerializeField]
     BoolReference inputLock;
 
     Rigidbody myRB;
 
+    float dashCooldownTimer = 0;
     float dashDurationTimer = 0;
     bool isDashing = false;
+    bool isCoolingDown = false;
 
     // Start is called before the first frame update
     void Start()
@@ -31,10 +35,10 @@ public class Dash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            PerformDash();
-        }
+       // if (Input.GetKeyDown(KeyCode.Space))
+       // {
+       //     PerformDash();
+       // }
 
         if (isDashing)
         {
@@ -45,16 +49,31 @@ public class Dash : MonoBehaviour
                 dashDurationTimer = 0;
                 isDashing = false;
                 inputLock.Value = false;
-                myRB.velocity = Vector3.zero;
+                isCoolingDown = true;
+                //myRB.velocity = Vector3.zero;
+            }
+        }
+
+        if (isCoolingDown)
+        {
+            dashCooldownTimer += Time.deltaTime;
+
+            if (dashCooldownTimer > DashCooldown.Value)
+            {
+                dashCooldownTimer = 0;
+                isCoolingDown = false;
             }
         }
     }
 
     public void PerformDash()
     {
-        Vector3 dir = new Vector3(Horizontal.Value, 0, Vertical.Value);
-        myRB.AddForce(dir * DashSpeed.Value, ForceMode.Impulse);
-        isDashing = true;
+        if (isCoolingDown == false && isDashing == false)
+        {
+            Vector3 dir = new Vector3(Horizontal.Value, 0, Vertical.Value);
+            myRB.AddForce(dir * DashSpeed.Value, ForceMode.Impulse);
+            isDashing = true;
+        }
     }
 
 

@@ -1,0 +1,2534 @@
+fileFormatVersion: 2
+guid: 316ae4765a01a2345827ad1dc88382a2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3272452466015556118
+    second: Character Select (1)_0
+  - first:
+      213: 3251055124464989735
+    second: Character Select (1)_1
+  - first:
+      213: 759649605423860207
+    second: Character Select (1)_2
+  - first:
+      213: -8275982956911804840
+    second: Character Select (1)_3
+  - first:
+      213: -4660372685082317602
+    second: Character Select (1)_4
+  - first:
+      213: 8267180262829674720
+    second: Character Select (1)_5
+  - first:
+      213: 3775489585100902339
+    second: Character Select (1)_6
+  - first:
+      213: 7709064111317218461
+    second: Character Select (1)_7
+  - first:
+      213: 2101391967954914955
+    second: Character Select (1)_8
+  - first:
+      213: -1846271653362876705
+    second: Character Select (1)_9
+  - first:
+      213: -508903276174916260
+    second: Character Select (1)_10
+  - first:
+      213: 3849930429033749489
+    second: Character Select (1)_11
+  - first:
+      213: 4823671758054073798
+    second: Character Select (1)_12
+  - first:
+      213: 2468669320856403213
+    second: Character Select (1)_13
+  - first:
+      213: 7390071337619491187
+    second: Character Select (1)_14
+  - first:
+      213: -4186203192469220643
+    second: Character Select (1)_15
+  - first:
+      213: -1776674502083352317
+    second: Character Select (1)_16
+  - first:
+      213: -968148652230237595
+    second: Character Select (1)_17
+  - first:
+      213: 8260284218370391006
+    second: Character Select (1)_18
+  - first:
+      213: 225444744741174926
+    second: Character Select (1)_19
+  - first:
+      213: -2112836628225441051
+    second: Character Select (1)_20
+  - first:
+      213: 3554665918642186265
+    second: Character Select (1)_21
+  - first:
+      213: 8190869636468556943
+    second: Character Select (1)_22
+  - first:
+      213: 5191187892741575568
+    second: Character Select (1)_23
+  - first:
+      213: -7172819157605402732
+    second: Character Select (1)_24
+  - first:
+      213: 2135444913383895885
+    second: Character Select (1)_25
+  - first:
+      213: 8111276303150541982
+    second: Character Select (1)_26
+  - first:
+      213: 5858398060946295090
+    second: Character Select (1)_27
+  - first:
+      213: -4538015967990245214
+    second: Character Select (1)_28
+  - first:
+      213: -2594420057099808028
+    second: Character Select (1)_29
+  - first:
+      213: 1874379436115257008
+    second: Character Select (1)_30
+  - first:
+      213: -4643636224027183429
+    second: Character Select (1)_31
+  - first:
+      213: -5697969785559560902
+    second: Character Select (1)_32
+  - first:
+      213: -7460019190044561388
+    second: Character Select (1)_33
+  - first:
+      213: 1875478663227449838
+    second: Character Select (1)_34
+  - first:
+      213: -9198859108194502951
+    second: Character Select (1)_35
+  - first:
+      213: -2839078593888323309
+    second: Character Select (1)_36
+  - first:
+      213: -5207768884938737570
+    second: Character Select (1)_37
+  - first:
+      213: 397266962483234184
+    second: Character Select (1)_38
+  - first:
+      213: -5484754596147494700
+    second: Character Select (1)_39
+  - first:
+      213: -5855795935565234246
+    second: Character Select (1)_40
+  - first:
+      213: -3505789946112726760
+    second: Character Select (1)_41
+  - first:
+      213: -1248200587182013053
+    second: Character Select (1)_42
+  - first:
+      213: 4741582018156327768
+    second: Character Select (1)_43
+  - first:
+      213: 7707892036982024516
+    second: Character Select (1)_44
+  - first:
+      213: -2898367464807903727
+    second: Character Select (1)_45
+  - first:
+      213: -5812057665959260741
+    second: Character Select (1)_46
+  - first:
+      213: 1954015991433398145
+    second: Character Select (1)_47
+  - first:
+      213: -5974098725159579937
+    second: Character Select (1)_48
+  - first:
+      213: 6382130344822940477
+    second: Character Select (1)_49
+  - first:
+      213: -6556477567849352029
+    second: Character Select (1)_50
+  - first:
+      213: -7620010950482583240
+    second: Character Select (1)_51
+  - first:
+      213: -8262467257547154616
+    second: Character Select (1)_52
+  - first:
+      213: -7170615637566048840
+    second: Character Select (1)_53
+  - first:
+      213: -674651075564790909
+    second: Character Select (1)_54
+  - first:
+      213: 2500383461288749888
+    second: Character Select (1)_55
+  - first:
+      213: 3919307645354402851
+    second: Character Select (1)_56
+  - first:
+      213: 3969916239956291151
+    second: Character Select (1)_57
+  - first:
+      213: -3947692055097110187
+    second: Character Select (1)_58
+  - first:
+      213: 1493488082353924867
+    second: Character Select (1)_59
+  - first:
+      213: 4173483645223436058
+    second: Character Select (1)_60
+  - first:
+      213: -4363597120158367097
+    second: Character Select (1)_61
+  - first:
+      213: -6818870398981668826
+    second: Character Select (1)_62
+  - first:
+      213: 698266261563048488
+    second: Character Select (1)_63
+  - first:
+      213: -7603495096968763624
+    second: Character Select (1)_64
+  - first:
+      213: 6832275669364761530
+    second: Character Select (1)_65
+  - first:
+      213: -7354686730675143195
+    second: Character Select (1)_66
+  - first:
+      213: -9016758855348220316
+    second: Character Select (1)_67
+  - first:
+      213: 4501243880715330746
+    second: Character Select (1)_68
+  - first:
+      213: -2284281725934104891
+    second: Character Select (1)_69
+  - first:
+      213: -8974782810497512302
+    second: Character Select (1)_70
+  - first:
+      213: -214079136400721819
+    second: Character Select (1)_71
+  - first:
+      213: 3440464780344650389
+    second: Character Select (1)_72
+  - first:
+      213: -3584380321530976170
+    second: Character Select (1)_73
+  - first:
+      213: 2365551107531320061
+    second: Character Select (1)_74
+  - first:
+      213: 5595668390617546247
+    second: Character Select (1)_75
+  - first:
+      213: -4964969013062872969
+    second: Character Select (1)_76
+  - first:
+      213: 8196234282885286549
+    second: Character Select (1)_77
+  - first:
+      213: 7058058474225964950
+    second: Character Select (1)_78
+  - first:
+      213: -2737773854400403212
+    second: Character Select (1)_79
+  - first:
+      213: 2237101415982690
+    second: Character Select (1)_80
+  - first:
+      213: 765762134039903872
+    second: Character Select (1)_81
+  - first:
+      213: 4179998930124680688
+    second: Character Select (1)_82
+  - first:
+      213: 9190015883332601947
+    second: Character Select (1)_83
+  - first:
+      213: 6758154281654218832
+    second: Character Select (1)_84
+  - first:
+      213: 4903856007801160678
+    second: Character Select (1)_85
+  - first:
+      213: -570185840187842124
+    second: Character Select (1)_86
+  - first:
+      213: -6780020280535693849
+    second: Character Select (1)_87
+  - first:
+      213: 119225781253706972
+    second: Character Select (1)_88
+  - first:
+      213: 9066548409235469576
+    second: Character Select (1)_89
+  - first:
+      213: -195923290274160436
+    second: Character Select (1)_90
+  - first:
+      213: 6450523984338445111
+    second: Character Select (1)_91
+  - first:
+      213: -2899530724116213894
+    second: Character Select (1)_92
+  - first:
+      213: -6183947267911144112
+    second: Character Select (1)_93
+  - first:
+      213: -1238715937394327307
+    second: Character Select (1)_94
+  - first:
+      213: -7345990480452473836
+    second: Character Select (1)_95
+  - first:
+      213: -7805279311224673208
+    second: Character Select (1)_96
+  - first:
+      213: -3193583471794349318
+    second: Character Select (1)_97
+  - first:
+      213: -627250587129414336
+    second: Character Select (1)_98
+  - first:
+      213: 5084717703354114844
+    second: Character Select (1)_99
+  - first:
+      213: -5994235933746144771
+    second: Character Select (1)_100
+  - first:
+      213: -7067069697634298541
+    second: Character Select (1)_101
+  - first:
+      213: 3288748162839977930
+    second: Character Select (1)_102
+  - first:
+      213: 691972383506128037
+    second: Character Select (1)_103
+  - first:
+      213: -1410201442001127683
+    second: Character Select (1)_104
+  - first:
+      213: -4949862580576061162
+    second: Character Select (1)_105
+  - first:
+      213: -2931828354733510779
+    second: Character Select (1)_106
+  - first:
+      213: 9159821313606357680
+    second: Character Select (1)_107
+  - first:
+      213: -8491713981133964637
+    second: Character Select (1)_108
+  - first:
+      213: -4363621735931618221
+    second: Character Select (1)_109
+  - first:
+      213: -9176863067689027164
+    second: Character Select (1)_110
+  - first:
+      213: -5075784315413580984
+    second: Character Select (1)_111
+  - first:
+      213: -8883749131979480942
+    second: Character Select (1)_112
+  - first:
+      213: 4587653759503154972
+    second: Character Select (1)_113
+  - first:
+      213: -6476498303773739937
+    second: Character Select (1)_114
+  - first:
+      213: 588405334410405139
+    second: Character Select (1)_115
+  - first:
+      213: -8209551404924198444
+    second: Character Select (1)_116
+  - first:
+      213: 5087270413553496432
+    second: Character Select (1)_117
+  - first:
+      213: -7668004125894954502
+    second: Character Select (1)_118
+  - first:
+      213: 9085705964486408108
+    second: Character Select (1)_119
+  - first:
+      213: -4778066911815192090
+    second: Character Select (1)_120
+  - first:
+      213: -3366958625226747494
+    second: Character Select (1)_121
+  - first:
+      213: 7569639828924653910
+    second: Character Select (1)_122
+  - first:
+      213: -485426125272891045
+    second: Character Select (1)_123
+  - first:
+      213: -9013089000760802069
+    second: Character Select (1)_124
+  - first:
+      213: 6813415535915184477
+    second: Character Select (1)_125
+  - first:
+      213: 8112733618030869283
+    second: Character Select (1)_126
+  - first:
+      213: 2892597465368556641
+    second: Character Select (1)_127
+  - first:
+      213: -6614589914507254781
+    second: Character Select (1)_128
+  - first:
+      213: -5735489860199578325
+    second: Character Select (1)_129
+  - first:
+      213: -956272674417937718
+    second: Character Select (1)_130
+  - first:
+      213: 7440567437685322172
+    second: Character Select (1)_131
+  - first:
+      213: 2969552262153695270
+    second: Character Select (1)_132
+  - first:
+      213: -8533824214341239483
+    second: Character Select (1)_133
+  - first:
+      213: 3517882883785953397
+    second: Character Select (1)_134
+  - first:
+      213: 3636891653939229893
+    second: Character Select (1)_135
+  - first:
+      213: 7062932063837823676
+    second: Character Select (1)_136
+  - first:
+      213: 3826705390799756180
+    second: Character Select (1)_137
+  - first:
+      213: -7023267116218311113
+    second: Character Select (1)_138
+  - first:
+      213: 4837386307891412650
+    second: Character Select (1)_139
+  - first:
+      213: 2330352737655864107
+    second: Character Select (1)_140
+  - first:
+      213: 3337322254488062325
+    second: Character Select (1)_141
+  - first:
+      213: 4173476336466787407
+    second: Character Select (1)_142
+  - first:
+      213: -255271770656365050
+    second: Character Select (1)_143
+  - first:
+      213: -21985874456673570
+    second: Character Select (1)_144
+  - first:
+      213: 7916694809448766314
+    second: Character Select (1)_145
+  - first:
+      213: 8669491601661038200
+    second: Character Select (1)_146
+  - first:
+      213: 3442592032708156505
+    second: Character Select (1)_147
+  - first:
+      213: 2315245524500335936
+    second: Character Select (1)_148
+  - first:
+      213: -2513127279340755183
+    second: Character Select (1)_149
+  - first:
+      213: 6542187783376543339
+    second: Character Select (1)_150
+  - first:
+      213: 1954626986851038914
+    second: Character Select (1)_151
+  - first:
+      213: 4254818281431598528
+    second: Character Select (1)_152
+  - first:
+      213: 3620950426030310757
+    second: Character Select (1)_153
+  - first:
+      213: -788846327942203406
+    second: Character Select (1)_154
+  - first:
+      213: -4982223313244809660
+    second: Character Select (1)_155
+  - first:
+      213: 6074733735528725512
+    second: Character Select (1)_156
+  - first:
+      213: 6078381112554802477
+    second: Character Select (1)_157
+  - first:
+      213: -8658244798028733712
+    second: Character Select (1)_158
+  - first:
+      213: -4947672680184654219
+    second: Character Select (1)_159
+  - first:
+      213: -2748680542784130901
+    second: Character Select (1)_160
+  - first:
+      213: -3533184765984683511
+    second: Character Select (1)_161
+  - first:
+      213: 7425048497132037982
+    second: Character Select (1)_162
+  - first:
+      213: -8334499642715051472
+    second: Character Select (1)_163
+  - first:
+      213: 5732475071659511565
+    second: Character Select (1)_164
+  - first:
+      213: -3782987608523823770
+    second: Character Select (1)_165
+  - first:
+      213: 2383863941702781150
+    second: Character Select (1)_166
+  - first:
+      213: 2890298102284058862
+    second: Character Select (1)_167
+  - first:
+      213: -7259973823856011269
+    second: Character Select (1)_168
+  - first:
+      213: -4134884826207346976
+    second: Character Select (1)_169
+  - first:
+      213: -3570532272689793688
+    second: Character Select (1)_170
+  - first:
+      213: -6182552231271529268
+    second: Character Select (1)_171
+  - first:
+      213: -2387316731882908315
+    second: Character Select (1)_172
+  - first:
+      213: 8101442164260346246
+    second: Character Select (1)_173
+  - first:
+      213: -2261413622615774637
+    second: Character Select (1)_174
+  - first:
+      213: 864187031772791199
+    second: Character Select (1)_175
+  - first:
+      213: 3711557881541048279
+    second: Character Select (1)_176
+  - first:
+      213: -1351495433431529105
+    second: Character Select (1)_177
+  - first:
+      213: 7454162220824258875
+    second: Character Select (1)_178
+  - first:
+      213: 8660567455320461710
+    second: Character Select (1)_179
+  - first:
+      213: -8156546985609828830
+    second: Character Select (1)_180
+  - first:
+      213: -6917581785663637320
+    second: Character Select (1)_181
+  - first:
+      213: 8860612642113123391
+    second: Character Select (1)_182
+  - first:
+      213: 9223004159536266908
+    second: Character Select (1)_183
+  - first:
+      213: -5676256419836195967
+    second: Character Select (1)_184
+  - first:
+      213: 1162410579367105076
+    second: Character Select (1)_185
+  - first:
+      213: -2785020736905134608
+    second: Character Select (1)_186
+  - first:
+      213: 8239404869198969075
+    second: Character Select (1)_187
+  - first:
+      213: 4977696666788170510
+    second: Character Select (1)_188
+  - first:
+      213: -3755066592500718652
+    second: Character Select (1)_189
+  - first:
+      213: 4510558753395217041
+    second: Character Select (1)_190
+  - first:
+      213: -9187930851824403814
+    second: Character Select (1)_191
+  - first:
+      213: 4543992017465680643
+    second: Character Select (1)_192
+  - first:
+      213: 5187007643242998303
+    second: Character Select (1)_193
+  - first:
+      213: 5312071396813912122
+    second: Character Select (1)_194
+  - first:
+      213: 4203552758268864764
+    second: Character Select (1)_195
+  - first:
+      213: -6394540012245904620
+    second: Character Select (1)_196
+  - first:
+      213: 2377701613516901996
+    second: Character Select (1)_197
+  - first:
+      213: -7938499904024369472
+    second: Character Select (1)_198
+  - first:
+      213: -3649807925232530684
+    second: Character Select (1)_199
+  - first:
+      213: -2799697325815325594
+    second: Character Select (1)_200
+  - first:
+      213: 7677113162553660086
+    second: Character Select (1)_201
+  - first:
+      213: 5113071350078433868
+    second: Character Select (1)_202
+  - first:
+      213: 1366354568932500739
+    second: Character Select (1)_203
+  - first:
+      213: -3382282400664998887
+    second: Character Select (1)_204
+  - first:
+      213: 4431120188185451942
+    second: Character Select (1)_205
+  - first:
+      213: 5411649836849367001
+    second: Character Select (1)_206
+  - first:
+      213: 1034615698939285264
+    second: Character Select (1)_207
+  - first:
+      213: 3292724560254967671
+    second: Character Select (1)_208
+  - first:
+      213: -6976233377022204622
+    second: Character Select (1)_209
+  - first:
+      213: 5130175400214485003
+    second: Character Select (1)_210
+  - first:
+      213: -7952554907743669863
+    second: Character Select (1)_211
+  - first:
+      213: -2793368641449366532
+    second: Character Select (1)_212
+  - first:
+      213: 5520568647694790342
+    second: Character Select (1)_213
+  - first:
+      213: -2344553203232971426
+    second: Character Select (1)_214
+  - first:
+      213: 6224501007905699760
+    second: Character Select (1)_215
+  - first:
+      213: 8037150580616161104
+    second: Character Select (1)_216
+  - first:
+      213: 5870841426233239951
+    second: Character Select (1)_217
+  - first:
+      213: 6319594950409844508
+    second: Character Select (1)_218
+  - first:
+      213: -5931769015345054568
+    second: Character Select (1)_219
+  - first:
+      213: 6078559303679422216
+    second: Character Select (1)_220
+  - first:
+      213: -8114142235366011794
+    second: Character Select (1)_221
+  - first:
+      213: 4254901383059488252
+    second: Character Select (1)_222
+  - first:
+      213: -3565367956816681292
+    second: Character Select (1)_223
+  - first:
+      213: -6484389200276149691
+    second: Character Select (1)_224
+  - first:
+      213: -4143130622438054497
+    second: Character Select (1)_225
+  - first:
+      213: -6132421476016385184
+    second: Character Select (1)_226
+  - first:
+      213: -6476153848089008209
+    second: Character Select (1)_227
+  - first:
+      213: -5254860588464650781
+    second: Character Select (1)_228
+  - first:
+      213: -3380380322153093440
+    second: Character Select (1)_229
+  - first:
+      213: -5162070737968241472
+    second: Character Select (1)_230
+  - first:
+      213: 8801056002659637825
+    second: Character Select (1)_231
+  - first:
+      213: 6868233801299475520
+    second: Character Select (1)_232
+  - first:
+      213: -2987252477297334136
+    second: Character Select (1)_233
+  - first:
+      213: 3744449557395912665
+    second: Character Select (1)_234
+  - first:
+      213: -2468044093630458442
+    second: Character Select (1)_235
+  - first:
+      213: -6248602259679780138
+    second: Character Select (1)_236
+  - first:
+      213: -8671106617141972270
+    second: Character Select (1)_237
+  - first:
+      213: -3627949867699371965
+    second: Character Select (1)_238
+  - first:
+      213: 1392973067643132320
+    second: Character Select (1)_239
+  - first:
+      213: -6779094480749229122
+    second: Character Select (1)_240
+  - first:
+      213: -8221966306815118784
+    second: Character Select (1)_241
+  - first:
+      213: -5253745585482113612
+    second: Character Select (1)_242
+  - first:
+      213: 6740893363398013634
+    second: Character Select (1)_243
+  - first:
+      213: 8567197794110396085
+    second: Character Select (1)_244
+  - first:
+      213: 2175424754982428180
+    second: Character Select (1)_245
+  - first:
+      213: 7386750704772038137
+    second: Character Select (1)_246
+  - first:
+      213: 2537482514081178211
+    second: Character Select (1)_247
+  - first:
+      213: 813797596031247908
+    second: Character Select (1)_248
+  - first:
+      213: 7263015415223785216
+    second: Character Select (1)_249
+  - first:
+      213: 1255932309183500541
+    second: Character Select (1)_250
+  - first:
+      213: -5492535247071927368
+    second: Character Select (1)_251
+  - first:
+      213: -5123406736772248077
+    second: Character Select (1)_252
+  - first:
+      213: 8953092105341618816
+    second: Character Select (1)_253
+  - first:
+      213: 6944276158625157550
+    second: Character Select (1)_254
+  - first:
+      213: -186637133458745080
+    second: Character Select (1)_255
+  - first:
+      213: -8282730166624856377
+    second: Character Select (1)_256
+  - first:
+      213: -9124819778662954124
+    second: Character Select (1)_257
+  - first:
+      213: -5721678594945395215
+    second: Character Select (1)_258
+  - first:
+      213: 8867479955516893672
+    second: Character Select (1)_259
+  - first:
+      213: 2113845766202877579
+    second: Character Select (1)_260
+  - first:
+      213: 5862608012503293995
+    second: Character Select (1)_261
+  - first:
+      213: -4011345009016040749
+    second: Character Select (1)_262
+  - first:
+      213: 4385651482079224018
+    second: Character Select (1)_263
+  - first:
+      213: 4171572177440391555
+    second: Character Select (1)_264
+  - first:
+      213: -7226519338949220570
+    second: Character Select (1)_265
+  - first:
+      213: 248996811662396251
+    second: Character Select (1)_266
+  - first:
+      213: -3130948935763052442
+    second: Character Select (1)_267
+  - first:
+      213: 2541496264896834718
+    second: Character Select (1)_268
+  - first:
+      213: -6036573371486762325
+    second: Character Select (1)_269
+  - first:
+      213: 5387240541983354333
+    second: Character Select (1)_270
+  - first:
+      213: -7347717167052232264
+    second: Character Select (1)_271
+  - first:
+      213: 3295977161029281089
+    second: Character Select (1)_272
+  - first:
+      213: -6565251239526675335
+    second: Character Select (1)_273
+  - first:
+      213: 5682623282486777284
+    second: Character Select (1)_274
+  - first:
+      213: -1905698089538353372
+    second: Character Select (1)_275
+  - first:
+      213: 4040501832265410041
+    second: Character Select (1)_276
+  - first:
+      213: 6136494461091892883
+    second: Character Select (1)_277
+  - first:
+      213: -3774085055961331504
+    second: Character Select (1)_278
+  - first:
+      213: 6216775055923362420
+    second: Character Select (1)_279
+  - first:
+      213: -5106039883547855956
+    second: Character Select (1)_280
+  - first:
+      213: -4023833522781434896
+    second: Character Select (1)_281
+  - first:
+      213: -1263385951168727324
+    second: Character Select (1)_282
+  - first:
+      213: 1820948842180055849
+    second: Character Select (1)_283
+  - first:
+      213: 7628306300905230886
+    second: Character Select (1)_284
+  - first:
+      213: -1082965604267863502
+    second: Character Select (1)_285
+  - first:
+      213: 8681069064523878569
+    second: Character Select (1)_286
+  - first:
+      213: -7017220294503809327
+    second: Character Select (1)_287
+  - first:
+      213: -6290374818716454901
+    second: Character Select (1)_288
+  - first:
+      213: 4059978465358803930
+    second: Character Select (1)_289
+  - first:
+      213: 5269293290442314438
+    second: Character Select (1)_290
+  - first:
+      213: 8276088066698761825
+    second: Character Select (1)_291
+  - first:
+      213: -3720818762389958844
+    second: Character Select (1)_292
+  - first:
+      213: -3470046824046499133
+    second: Character Select (1)_293
+  - first:
+      213: 8648322890661797338
+    second: Character Select (1)_294
+  - first:
+      213: 1387169745445154584
+    second: Character Select (1)_295
+  - first:
+      213: 6549280504502089577
+    second: Character Select (1)_296
+  - first:
+      213: -1778135433485311237
+    second: Character Select (1)_297
+  - first:
+      213: 3035319434048552141
+    second: Character Select (1)_298
+  - first:
+      213: -3256602624805941813
+    second: Character Select (1)_299
+  - first:
+      213: 1033429968860167296
+    second: Character Select (1)_300
+  - first:
+      213: 6706270811396060068
+    second: Character Select (1)_301
+  - first:
+      213: 7586821661646990977
+    second: Character Select (1)_302
+  - first:
+      213: 4116415440222973580
+    second: Character Select (1)_303
+  - first:
+      213: -8115375668857373911
+    second: Character Select (1)_304
+  - first:
+      213: 3286141739596596698
+    second: Character Select (1)_305
+  - first:
+      213: -7636968470892980841
+    second: Character Select (1)_306
+  - first:
+      213: -2848009414490760473
+    second: Character Select (1)_307
+  - first:
+      213: -8783370486082863401
+    second: Character Select (1)_308
+  - first:
+      213: -3575068144407927845
+    second: Character Select (1)_309
+  - first:
+      213: -7896400900011291853
+    second: Character Select (1)_310
+  - first:
+      213: 1572527126873619447
+    second: Character Select (1)_311
+  - first:
+      213: 1281027439490573728
+    second: Character Select (1)_312
+  - first:
+      213: -8256561135824380534
+    second: Character Select (1)_313
+  - first:
+      213: 3826051513148567438
+    second: Character Select (1)_314
+  - first:
+      213: -5084088051064985255
+    second: Character Select (1)_315
+  - first:
+      213: 8120434307578413039
+    second: Character Select (1)_316
+  - first:
+      213: 8063740569566179114
+    second: Character Select (1)_317
+  - first:
+      213: 3361538493520340210
+    second: Character Select (1)_318
+  - first:
+      213: -8086003099679989815
+    second: Character Select (1)_319
+  - first:
+      213: -8229447011251460411
+    second: Character Select (1)_320
+  - first:
+      213: -881996842962347710
+    second: Character Select (1)_321
+  - first:
+      213: 6717372529524012540
+    second: Character Select (1)_322
+  - first:
+      213: -2779660456676999809
+    second: Character Select (1)_323
+  - first:
+      213: -6281100167835667299
+    second: Character Select (1)_324
+  - first:
+      213: -7211389053350015159
+    second: Character Select (1)_325
+  - first:
+      213: -5948725573232784309
+    second: Character Select (1)_326
+  - first:
+      213: -5704882541614974999
+    second: Character Select (1)_327
+  - first:
+      213: 4191932134706571477
+    second: Character Select (1)_328
+  - first:
+      213: -4414283437195264222
+    second: Character Select (1)_329
+  - first:
+      213: -118755955583738903
+    second: Character Select (1)_330
+  - first:
+      213: -1606430487268465988
+    second: Character Select (1)_331
+  - first:
+      213: -1631073880288630498
+    second: Character Select (1)_332
+  - first:
+      213: -3717121945125001231
+    second: Character Select (1)_333
+  - first:
+      213: 3775483460379504279
+    second: Character Select (1)_334
+  - first:
+      213: 1700910459202665781
+    second: Character Select (1)_335
+  - first:
+      213: 7051168581149519192
+    second: Character Select (1)_336
+  - first:
+      213: 4160400484062261166
+    second: Character Select (1)_337
+  - first:
+      213: -6871807520660811123
+    second: Character Select (1)_338
+  - first:
+      213: -2764374137007493762
+    second: Character Select (1)_339
+  - first:
+      213: -6488441731526954159
+    second: Character Select (1)_340
+  - first:
+      213: -4212172373375127287
+    second: Character Select (1)_341
+  - first:
+      213: 7519541333731255275
+    second: Character Select (1)_342
+  - first:
+      213: -5750128205872528041
+    second: Character Select (1)_343
+  - first:
+      213: 5087086588820933724
+    second: Character Select (1)_344
+  - first:
+      213: 4933239269608288335
+    second: Character Select (1)_345
+  - first:
+      213: 5630212882250643068
+    second: Character Select (1)_346
+  - first:
+      213: 2353665270700249962
+    second: Character Select (1)_347
+  - first:
+      213: 3585324021673569356
+    second: Character Select (1)_348
+  - first:
+      213: 7337719802522154166
+    second: Character Select (1)_349
+  - first:
+      213: -4267379186625726111
+    second: Character Select (1)_350
+  - first:
+      213: -3834144252998879883
+    second: Character Select (1)_351
+  - first:
+      213: 6999008785699916840
+    second: Character Select (1)_352
+  - first:
+      213: -2559024904755925549
+    second: Character Select (1)_353
+  - first:
+      213: 235317688039529364
+    second: Character Select (1)_354
+  - first:
+      213: -4281087622569987520
+    second: Character Select (1)_355
+  - first:
+      213: 4861354696370069727
+    second: Character Select (1)_356
+  - first:
+      213: -5246526669414291050
+    second: Character Select (1)_357
+  - first:
+      213: -660410798311693751
+    second: Character Select (1)_358
+  - first:
+      213: -3625491375530147330
+    second: Character Select (1)_359
+  - first:
+      213: -2250280954073201955
+    second: Character Select (1)_360
+  - first:
+      213: -9053109953616053137
+    second: Character Select (1)_361
+  - first:
+      213: 7088247985848487275
+    second: Character Select (1)_362
+  - first:
+      213: 5113313122802874725
+    second: Character Select (1)_363
+  - first:
+      213: -5851317491415729965
+    second: Character Select (1)_364
+  - first:
+      213: -6090249571997259529
+    second: Character Select (1)_365
+  - first:
+      213: -384402287463001920
+    second: Character Select (1)_366
+  - first:
+      213: 8436177344908079792
+    second: Character Select (1)_367
+  - first:
+      213: -5803232639059083025
+    second: Character Select (1)_368
+  - first:
+      213: 3273775176149140209
+    second: Character Select (1)_369
+  - first:
+      213: -5311866073476845299
+    second: Character Select (1)_370
+  - first:
+      213: 8432028934288689518
+    second: Character Select (1)_371
+  - first:
+      213: 9181099555856307448
+    second: Character Select (1)_372
+  - first:
+      213: 8955246837244734929
+    second: Character Select (1)_373
+  - first:
+      213: 6104521904255652129
+    second: Character Select (1)_374
+  - first:
+      213: -6544149587110291951
+    second: Character Select (1)_375
+  - first:
+      213: -1645820563716241993
+    second: Character Select (1)_376
+  - first:
+      213: 1995039067560407352
+    second: Character Select (1)_377
+  - first:
+      213: -4052878130971511315
+    second: Character Select (1)_378
+  - first:
+      213: -1009303534511980410
+    second: Character Select (1)_379
+  - first:
+      213: 839687574735595774
+    second: Character Select (1)_380
+  - first:
+      213: 2072604174109081418
+    second: Character Select (1)_381
+  - first:
+      213: 3752166461305526692
+    second: Character Select (1)_382
+  - first:
+      213: -6680842446721061997
+    second: Character Select (1)_383
+  - first:
+      213: -1321000884749259039
+    second: Character Select (1)_384
+  - first:
+      213: 8968255503139073163
+    second: Character Select (1)_385
+  - first:
+      213: 1640579187948373008
+    second: Character Select (1)_386
+  - first:
+      213: 117478112695228933
+    second: Character Select (1)_387
+  - first:
+      213: 6593175017926470593
+    second: Character Select (1)_388
+  - first:
+      213: 3196913995739571853
+    second: Character Select (1)_389
+  - first:
+      213: 8849807292501648450
+    second: Character Select (1)_390
+  - first:
+      213: -5445817756466329949
+    second: Character Select (1)_391
+  - first:
+      213: 1540930025468308591
+    second: Character Select (1)_392
+  - first:
+      213: -6750002098455633172
+    second: Character Select (1)_393
+  - first:
+      213: 1314064300617815745
+    second: Character Select (1)_394
+  - first:
+      213: 9052383106463946863
+    second: Character Select (1)_395
+  - first:
+      213: -1433031564964426845
+    second: Character Select (1)_396
+  - first:
+      213: -453025731165222562
+    second: Character Select (1)_397
+  - first:
+      213: -6672857696519923163
+    second: Character Select (1)_398
+  - first:
+      213: 4143118427998481135
+    second: Character Select (1)_399
+  - first:
+      213: -2700439484613121506
+    second: Character Select (1)_400
+  - first:
+      213: -3470493564114910808
+    second: Character Select (1)_401
+  - first:
+      213: -725183597788852137
+    second: Character Select (1)_402
+  - first:
+      213: -6131115290532788558
+    second: Character Select (1)_403
+  - first:
+      213: 7427105406728620274
+    second: Character Select (1)_404
+  - first:
+      213: 4136979895880226318
+    second: Character Select (1)_405
+  - first:
+      213: 2556878076291387291
+    second: Character Select (1)_406
+  - first:
+      213: 7116092214249007338
+    second: Character Select (1)_407
+  - first:
+      213: 8833746239810302062
+    second: Character Select (1)_408
+  - first:
+      213: -6493781831486089403
+    second: Character Select (1)_409
+  - first:
+      213: -4174739537741064572
+    second: Character Select (1)_410
+  - first:
+      213: 3105926148980054989
+    second: Character Select (1)_411
+  - first:
+      213: -697906522567174342
+    second: Character Select (1)_412
+  - first:
+      213: -9207372355381401572
+    second: Character Select (1)_413
+  - first:
+      213: 3481190786439009045
+    second: Character Select (1)_414
+  - first:
+      213: 3661019977825807935
+    second: Character Select (1)_415
+  - first:
+      213: 4762523830242686799
+    second: Character Select (1)_416
+  - first:
+      213: 8366342338400437601
+    second: Character Select (1)_417
+  - first:
+      213: -7929647052973069731
+    second: Character Select (1)_418
+  - first:
+      213: -5669989263073871415
+    second: Character Select (1)_419
+  - first:
+      213: -1021754826455438894
+    second: Character Select (1)_420
+  - first:
+      213: -2761755942524335514
+    second: Character Select (1)_421
+  - first:
+      213: 2320986432614101417
+    second: Character Select (1)_422
+  - first:
+      213: -3677756114991899936
+    second: Character Select (1)_423
+  - first:
+      213: 2618862271263472405
+    second: Character Select (1)_424
+  - first:
+      213: 8595652289647673606
+    second: Character Select (1)_425
+  - first:
+      213: -9143715728013246083
+    second: Character Select (1)_426
+  - first:
+      213: 149308694943478089
+    second: Character Select (1)_427
+  - first:
+      213: 8642441147123220333
+    second: Character Select (1)_428
+  - first:
+      213: -8850367333103568864
+    second: Character Select (1)_429
+  - first:
+      213: 2454829457539929452
+    second: Character Select (1)_430
+  - first:
+      213: 3746721897513036019
+    second: Character Select (1)_431
+  - first:
+      213: 130696082356628032
+    second: Character Select (1)_432
+  - first:
+      213: -899243925973073447
+    second: Character Select (1)_433
+  - first:
+      213: 8440086686798124004
+    second: Character Select (1)_434
+  - first:
+      213: -7348581055873415894
+    second: Character Select (1)_435
+  - first:
+      213: -2479759103591455347
+    second: Character Select (1)_436
+  - first:
+      213: -2235244819786380837
+    second: Character Select (1)_437
+  - first:
+      213: 2618620990366118686
+    second: Character Select (1)_438
+  - first:
+      213: -7945304422875497581
+    second: Character Select (1)_439
+  - first:
+      213: -2312285870202353744
+    second: Character Select (1)_440
+  - first:
+      213: -8485928978527422556
+    second: Character Select (1)_441
+  - first:
+      213: 6882645024251261432
+    second: Character Select (1)_442
+  - first:
+      213: -6175945085657479960
+    second: Character Select (1)_443
+  - first:
+      213: -5314007514228358280
+    second: Character Select (1)_444
+  - first:
+      213: 865542197293408220
+    second: Character Select (1)_445
+  - first:
+      213: 7530453946843010562
+    second: Character Select (1)_446
+  - first:
+      213: -49522242465645523
+    second: Character Select (1)_447
+  - first:
+      213: 5478281834352966067
+    second: Character Select (1)_448
+  - first:
+      213: -4827891013001578573
+    second: Character Select (1)_449
+  - first:
+      213: 8190632167903669225
+    second: Character Select (1)_450
+  - first:
+      213: 2972864393118148568
+    second: Character Select (1)_451
+  - first:
+      213: 6720786750644646283
+    second: Character Select (1)_452
+  - first:
+      213: -7360392911827529292
+    second: Character Select (1)_453
+  - first:
+      213: 8581910383500351232
+    second: Character Select (1)_454
+  - first:
+      213: 8734680345457505845
+    second: Character Select (1)_455
+  - first:
+      213: 3838539371837463167
+    second: Character Select (1)_456
+  - first:
+      213: -4780850381901056743
+    second: Character Select (1)_457
+  - first:
+      213: -576065407254056083
+    second: Character Select (1)_458
+  - first:
+      213: -2293503564186575631
+    second: Character Select (1)_459
+  - first:
+      213: 3432492117669985650
+    second: Character Select (1)_460
+  - first:
+      213: 3990082079472890330
+    second: Character Select (1)_461
+  - first:
+      213: -6965427809385454366
+    second: Character Select (1)_462
+  - first:
+      213: 4206724086621755259
+    second: Character Select (1)_463
+  - first:
+      213: 3005133959315240383
+    second: Character Select (1)_464
+  - first:
+      213: -568396243539887213
+    second: Character Select (1)_465
+  - first:
+      213: 8515794351342043932
+    second: Character Select (1)_466
+  - first:
+      213: -6872516686047804306
+    second: Character Select (1)_467
+  - first:
+      213: 4603570137017490649
+    second: Character Select (1)_468
+  - first:
+      213: 324766964955034398
+    second: Character Select (1)_469
+  - first:
+      213: 2822871992300517855
+    second: Character Select (1)_470
+  - first:
+      213: -2628802705295504533
+    second: Character Select (1)_471
+  - first:
+      213: -1709771251096047368
+    second: Character Select (1)_472
+  - first:
+      213: 9048264684638145438
+    second: Character Select (1)_473
+  - first:
+      213: 2750513831546257242
+    second: Character Select (1)_474
+  - first:
+      213: 460192343444129722
+    second: Character Select (1)_475
+  - first:
+      213: -5290975122160509953
+    second: Character Select (1)_476
+  - first:
+      213: -5661353451478963651
+    second: Character Select (1)_477
+  - first:
+      213: -4301934621075825557
+    second: Character Select (1)_478
+  - first:
+      213: 4662144008685812680
+    second: Character Select (1)_479
+  - first:
+      213: 5347269523913906732
+    second: Character Select (1)_480
+  - first:
+      213: 5378197703613151134
+    second: Character Select (1)_481
+  - first:
+      213: 3243318515601976711
+    second: Character Select (1)_482
+  - first:
+      213: 523165031328913418
+    second: Character Select (1)_483
+  - first:
+      213: -8714729758471988606
+    second: Character Select (1)_484
+  - first:
+      213: -4185131836629640283
+    second: Character Select (1)_485
+  - first:
+      213: 8115039943984740020
+    second: Character Select (1)_486
+  - first:
+      213: 8604391203913824385
+    second: Character Select (1)_487
+  - first:
+      213: 2282901323172926503
+    second: Character Select (1)_488
+  - first:
+      213: -4179298870198713731
+    second: Character Select (1)_489
+  - first:
+      213: -6670569525698207425
+    second: Character Select (1)_490
+  - first:
+      213: 2428029896409651780
+    second: Character Select (1)_491
+  - first:
+      213: 2175749487763869211
+    second: Character Select (1)_492
+  - first:
+      213: 6881507409442261585
+    second: Character Select (1)_493
+  - first:
+      213: 2067914411708898106
+    second: Character Select (1)_494
+  - first:
+      213: 3893360969038497051
+    second: Character Select (1)_495
+  - first:
+      213: 9211743869923499905
+    second: Character Select (1)_496
+  - first:
+      213: -2839737991713721923
+    second: Character Select (1)_497
+  - first:
+      213: 5109950390221938035
+    second: Character Select (1)_498
+  - first:
+      213: 1477046888401328357
+    second: Character Select (1)_499
+  - first:
+      213: 5791708363807436338
+    second: Character Select (1)_500
+  - first:
+      213: -6200426989968070406
+    second: Character Select (1)_501
+  - first:
+      213: 9082290777207776372
+    second: Character Select (1)_502
+  - first:
+      213: -5660739897099300515
+    second: Character Select (1)_503
+  - first:
+      213: -630463078605732349
+    second: Character Select (1)_504
+  - first:
+      213: 1422065812116987273
+    second: Character Select (1)_505
+  - first:
+      213: -1974157361045130216
+    second: Character Select (1)_506
+  - first:
+      213: -922534072870303994
+    second: Character Select (1)_507
+  - first:
+      213: 2939875591221666933
+    second: Character Select (1)_508
+  - first:
+      213: 1336657829246180366
+    second: Character Select (1)_509
+  - first:
+      213: 530852622172263736
+    second: Character Select (1)_510
+  - first:
+      213: 5000717928163860459
+    second: Character Select (1)_511
+  - first:
+      213: 6882758310161162658
+    second: Character Select (1)_512
+  - first:
+      213: 4585770188450515979
+    second: Character Select (1)_513
+  - first:
+      213: 8404875270732235847
+    second: Character Select (1)_514
+  - first:
+      213: 1783185071557849021
+    second: Character Select (1)_515
+  - first:
+      213: 3395529382966136248
+    second: Character Select (1)_516
+  - first:
+      213: -1718737968969460299
+    second: Character Select (1)_517
+  - first:
+      213: -4748744673702696751
+    second: Character Select (1)_518
+  - first:
+      213: 5871388609560155055
+    second: Character Select (1)_519
+  - first:
+      213: 9073759214122775664
+    second: Character Select (1)_520
+  - first:
+      213: -3236821697822393341
+    second: Character Select (1)_521
+  - first:
+      213: 1383160876188465191
+    second: Character Select (1)_522
+  - first:
+      213: 7772752103051522364
+    second: Character Select (1)_523
+  - first:
+      213: -2425882983320057268
+    second: Character Select (1)_524
+  - first:
+      213: -518059413064140780
+    second: Character Select (1)_525
+  - first:
+      213: -8416954405727450481
+    second: Character Select (1)_526
+  - first:
+      213: -2200799078483197221
+    second: Character Select (1)_527
+  - first:
+      213: 3963240611465981381
+    second: Character Select (1)_528
+  - first:
+      213: 2377102930564425612
+    second: Character Select (1)_529
+  - first:
+      213: -5620332018616269517
+    second: Character Select (1)_530
+  - first:
+      213: -118563627173212487
+    second: Character Select (1)_531
+  - first:
+      213: -4027381672102333190
+    second: Character Select (1)_532
+  - first:
+      213: 4090985658366986901
+    second: Character Select (1)_533
+  - first:
+      213: 2286739572528200125
+    second: Character Select (1)_534
+  - first:
+      213: -4568976112344779005
+    second: Character Select (1)_535
+  - first:
+      213: -648597601611487959
+    second: Character Select (1)_536
+  - first:
+      213: 263538552984384783
+    second: Character Select (1)_537
+  - first:
+      213: -5096955445815718941
+    second: Character Select (1)_538
+  - first:
+      213: -3702555500177339067
+    second: Character Select (1)_539
+  - first:
+      213: -6521982879098787460
+    second: Character Select (1)_540
+  - first:
+      213: -8971286531925789580
+    second: Character Select (1)_541
+  - first:
+      213: -3632491254157848906
+    second: Character Select (1)_542
+  - first:
+      213: -3071352268049391505
+    second: Character Select (1)_543
+  - first:
+      213: -1178006322091601328
+    second: Character Select (1)_544
+  - first:
+      213: 130251386685369293
+    second: Character Select (1)_545
+  - first:
+      213: 5193874930904323118
+    second: Character Select (1)_546
+  - first:
+      213: -4449448569581105256
+    second: Character Select (1)_547
+  - first:
+      213: 4386143925483651457
+    second: Character Select (1)_548
+  - first:
+      213: 1203588923952047366
+    second: Character Select (1)_549
+  - first:
+      213: -3601827944549346021
+    second: Character Select (1)_550
+  - first:
+      213: 1947622670577173089
+    second: Character Select (1)_551
+  - first:
+      213: 4632908188834361278
+    second: Character Select (1)_552
+  - first:
+      213: 2338135550619146531
+    second: Character Select (1)_553
+  - first:
+      213: 5993206778992582907
+    second: Character Select (1)_554
+  - first:
+      213: -1296744381774158759
+    second: Character Select (1)_555
+  - first:
+      213: -1021913340163638051
+    second: Character Select (1)_556
+  - first:
+      213: 2614761644834514811
+    second: Character Select (1)_557
+  - first:
+      213: 5341772591497227094
+    second: Character Select (1)_558
+  - first:
+      213: 5939916608555924079
+    second: Character Select (1)_559
+  - first:
+      213: 6270337519401256742
+    second: Character Select (1)_560
+  - first:
+      213: 9025845934403356179
+    second: Character Select (1)_561
+  - first:
+      213: -8559728834895687566
+    second: Character Select (1)_562
+  - first:
+      213: -7747133770763541123
+    second: Character Select (1)_563
+  - first:
+      213: -6270375936937806673
+    second: Character Select (1)_564
+  - first:
+      213: -7173804566949334946
+    second: Character Select (1)_565
+  - first:
+      213: 8756001896442406782
+    second: Character Select (1)_566
+  - first:
+      213: 6161587163534740490
+    second: Character Select (1)_567
+  - first:
+      213: 8994858758637624563
+    second: Character Select (1)_568
+  - first:
+      213: -8055870206121991380
+    second: Character Select (1)_569
+  - first:
+      213: -3473529604637424109
+    second: Character Select (1)_570
+  - first:
+      213: 322239425716639911
+    second: Character Select (1)_571
+  - first:
+      213: 1229577778816964332
+    second: Character Select (1)_572
+  - first:
+      213: -1145335113241895295
+    second: Character Select (1)_573
+  - first:
+      213: -183976633462161475
+    second: Character Select (1)_574
+  - first:
+      213: 5267357737826024809
+    second: Character Select (1)_575
+  - first:
+      213: -1460399669031290406
+    second: Character Select (1)_576
+  - first:
+      213: -5006361355422577441
+    second: Character Select (1)_577
+  - first:
+      213: 2066171821988354627
+    second: Character Select (1)_578
+  - first:
+      213: -2594159258963472365
+    second: Character Select (1)_579
+  - first:
+      213: -3826029428475980690
+    second: Character Select (1)_580
+  - first:
+      213: 5742307401953688125
+    second: Character Select (1)_581
+  - first:
+      213: 5470893039347453722
+    second: Character Select (1)_582
+  - first:
+      213: -1026489418656515566
+    second: Character Select (1)_583
+  - first:
+      213: 4133626733033892288
+    second: Character Select (1)_584
+  - first:
+      213: 7289715660987998331
+    second: Character Select (1)_585
+  - first:
+      213: 4390203179359482121
+    second: Character Select (1)_586
+  - first:
+      213: -2901913814978692145
+    second: Character Select (1)_587
+  - first:
+      213: 3584678349168675449
+    second: Character Select (1)_588
+  - first:
+      213: -2459476068213275382
+    second: Character Select (1)_589
+  - first:
+      213: -6593806521326207180
+    second: Character Select (1)_590
+  - first:
+      213: 7182524476945313091
+    second: Character Select (1)_591
+  - first:
+      213: -5443188006660742895
+    second: Character Select (1)_592
+  - first:
+      213: -1611267121355886840
+    second: Character Select (1)_593
+  - first:
+      213: -4785999748383465355
+    second: Character Select (1)_594
+  - first:
+      213: 1535259911433387876
+    second: Character Select (1)_595
+  - first:
+      213: -5829130061650020643
+    second: Character Select (1)_596
+  - first:
+      213: -3319603395811878875
+    second: Character Select (1)_597
+  - first:
+      213: 6155208135190905566
+    second: Character Select (1)_598
+  - first:
+      213: 5908774779639493839
+    second: Character Select (1)_599
+  - first:
+      213: 7005897708138899071
+    second: Character Select (1)_600
+  - first:
+      213: 1094535028520215426
+    second: Character Select (1)_601
+  - first:
+      213: 6696421919106513658
+    second: Character Select (1)_602
+  - first:
+      213: 9181809388971142851
+    second: Character Select (1)_603
+  - first:
+      213: -6060079217289223464
+    second: Character Select (1)_604
+  - first:
+      213: 6654026340230753633
+    second: Character Select (1)_605
+  - first:
+      213: -8951781393054724288
+    second: Character Select (1)_606
+  - first:
+      213: 8437364759206045706
+    second: Character Select (1)_607
+  - first:
+      213: 6864328112002410827
+    second: Character Select (1)_608
+  - first:
+      213: 8648196590774045366
+    second: Character Select (1)_609
+  - first:
+      213: 8196270262517668016
+    second: Character Select (1)_610
+  - first:
+      213: 8569251881371154356
+    second: Character Select (1)_611
+  - first:
+      213: -4797671598947868343
+    second: Character Select (1)_612
+  - first:
+      213: -6819238924058377705
+    second: Character Select (1)_613
+  - first:
+      213: -8438559125106677950
+    second: Character Select (1)_614
+  - first:
+      213: 1496400925458453149
+    second: Character Select (1)_615
+  - first:
+      213: -520845456840998141
+    second: Character Select (1)_616
+  - first:
+      213: 6123676983208766340
+    second: Character Select (1)_617
+  - first:
+      213: 4728926440473410055
+    second: Character Select (1)_618
+  - first:
+      213: 373195428205420407
+    second: Character Select (1)_619
+  - first:
+      213: 4235093697092005063
+    second: Character Select (1)_620
+  - first:
+      213: -6063804357989050791
+    second: Character Select (1)_621
+  - first:
+      213: 3358350680141238206
+    second: Character Select (1)_622
+  - first:
+      213: -647214462418748727
+    second: Character Select (1)_623
+  - first:
+      213: 787821540761573095
+    second: Character Select (1)_624
+  - first:
+      213: 5070808256961722751
+    second: Character Select (1)_625
+  - first:
+      213: -4066375661829903778
+    second: Character Select (1)_626
+  - first:
+      213: 4537976800695578385
+    second: Character Select (1)_627
+  - first:
+      213: -6983028962623446876
+    second: Character Select (1)_628
+  - first:
+      213: -8199110369539678471
+    second: Character Select (1)_629
+  - first:
+      213: -5861138735081057147
+    second: Character Select (1)_630
+  - first:
+      213: -4261029312023760839
+    second: Character Select (1)_631
+  - first:
+      213: 5215404497680082572
+    second: Character Select (1)_632
+  - first:
+      213: 1711600710636398425
+    second: Character Select (1)_633
+  - first:
+      213: 4978196616687328003
+    second: Character Select (1)_634
+  - first:
+      213: -2482440426296976053
+    second: Character Select (1)_635
+  - first:
+      213: 6568423698847306067
+    second: Character Select (1)_636
+  - first:
+      213: -2991058554551324953
+    second: Character Select (1)_637
+  - first:
+      213: -6074931462260874766
+    second: Character Select (1)_638
+  - first:
+      213: -7556220706063601185
+    second: Character Select (1)_639
+  - first:
+      213: -1257840298405912898
+    second: Character Select (1)_640
+  - first:
+      213: -5715794212061645050
+    second: Character Select (1)_641
+  - first:
+      213: -6967617341757233612
+    second: Character Select (1)_642
+  - first:
+      213: 2818119396330410114
+    second: Character Select (1)_643
+  - first:
+      213: 4567791561048951088
+    second: Character Select (1)_644
+  - first:
+      213: -7573192051565169637
+    second: Character Select (1)_645
+  - first:
+      213: 14555636334580970
+    second: Character Select (1)_646
+  - first:
+      213: -8495548597666538109
+    second: Character Select (1)_647
+  - first:
+      213: -4180998196142529105
+    second: Character Select (1)_648
+  - first:
+      213: -4008292951511327032
+    second: Character Select (1)_649
+  - first:
+      213: -9216431748117969062
+    second: Character Select (1)_650
+  - first:
+      213: 8050984066789578521
+    second: Character Select (1)_651
+  - first:
+      213: -8310771138625847675
+    second: Character Select (1)_652
+  - first:
+      213: -1112130155165788804
+    second: Character Select (1)_653
+  - first:
+      213: -6003402143509635846
+    second: Character Select (1)_654
+  - first:
+      213: 3709024890652950869
+    second: Character Select (1)_655
+  - first:
+      213: 2943562516887315092
+    second: Character Select (1)_656
+  - first:
+      213: -7011707335111971400
+    second: Character Select (1)_657
+  - first:
+      213: -6072004360687432010
+    second: Character Select (1)_658
+  - first:
+      213: 5989171019989389758
+    second: Character Select (1)_659
+  - first:
+      213: 8179676674833779831
+    second: Character Select (1)_660
+  - first:
+      213: 4629939626547376867
+    second: Character Select (1)_661
+  - first:
+      213: -592509832584688496
+    second: Character Select (1)_662
+  - first:
+      213: -345168819416079453
+    second: Character Select (1)_663
+  - first:
+      213: 173950664875984001
+    second: Character Select (1)_664
+  - first:
+      213: -3922384744230676991
+    second: Character Select (1)_665
+  - first:
+      213: 7275739726752094790
+    second: Character Select (1)_666
+  - first:
+      213: 7368344138392395453
+    second: Character Select (1)_667
+  - first:
+      213: 3881707333095938955
+    second: Character Select (1)_668
+  - first:
+      213: 1804871467153695252
+    second: Character Select (1)_669
+  - first:
+      213: 6549072249226621803
+    second: Character Select (1)_670
+  - first:
+      213: -9204121941838006237
+    second: Character Select (1)_671
+  - first:
+      213: 3865082948031056344
+    second: Character Select (1)_672
+  - first:
+      213: 9080354986712772475
+    second: Character Select (1)_673
+  - first:
+      213: -421268542000028615
+    second: Character Select (1)_674
+  - first:
+      213: 7507397592432799500
+    second: Character Select (1)_675
+  - first:
+      213: -3820646545278158422
+    second: Character Select (1)_676
+  - first:
+      213: 4970427863013774197
+    second: Character Select (1)_677
+  - first:
+      213: -8257329133140718337
+    second: Character Select (1)_0
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Character Select (1)_229
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 2200
+        width: 365
+        height: 478
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6285cc10a7611d0800000000000000
+      internalID: -3380380322153093440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Select (1)_230
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 2316
+        width: 353
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4e6fd7304ac58b0800000000000000
+      internalID: -5162070737968241472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Select (1)_376
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 1939
+        width: 4
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b509afcaeed829e0800000000000000
+      internalID: -1645820563716241993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Select (1)_493
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 1783
+        width: 94
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a46037786008f50800000000000000
+      internalID: 6881507409442261585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Select (1)_494
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 1783
+        width: 96
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3bd1df7335b2bc10800000000000000
+      internalID: 2067914411708898106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Select (1)_495
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 1783
+        width: 95
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1509e56c2ff70630800000000000000
+      internalID: 3893360969038497051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Select (1)_496
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 1783
+        width: 92
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f1ca86e30b6df70800000000000000
+      internalID: 9211743869923499905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Select (1)_501
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1608
+        width: 4
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8653ff088a3f9a0800000000000000
+      internalID: -6200426989968070406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Select (1)_514
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 1630
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744c57d178d14a470800000000000000
+      internalID: 8404875270732235847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Select (1)_548
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 1608
+        width: 5
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181c03459a6bedc30800000000000000
+      internalID: 4386143925483651457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Select (1)_573
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1059
+        width: 365
+        height: 478
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e5f6268c3fa10f0800000000000000
+      internalID: -1145335113241895295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Select (1)_574
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 1059
+        width: 365
+        height: 478
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbff3830a32627df0800000000000000
+      internalID: -183976633462161475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Select (1)_575
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 1059
+        width: 365
+        height: 478
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d760474f9691940800000000000000
+      internalID: 5267357737826024809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Select (1)_608
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 674
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b49a1a19c0ef24f50800000000000000
+      internalID: 6864328112002410827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Select (1)_609
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 674
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bac4dcaaf0940870800000000000000
+      internalID: 8648196590774045366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Select (1)_628
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 652
+        width: 4
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0a09af72c471f90800000000000000
+      internalID: -6983028962623446876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character Select (1)_676
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 109
+        width: 373
+        height: 486
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa93f50b5365afac0800000000000000
+      internalID: -3820646545278158422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d84a05fe4f02646438781eb7f5308c7b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

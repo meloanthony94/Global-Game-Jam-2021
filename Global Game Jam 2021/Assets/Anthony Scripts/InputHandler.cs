@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Rewired;
 
 public class InputHandler : MonoBehaviour
 {
@@ -28,10 +29,17 @@ public class InputHandler : MonoBehaviour
     [SerializeField]
     ScriptableEvent[] PlayerTrianglePressGroup;
 
+    [SerializeField]
+    List<Player> players = new List<Player>(); // The Rewired Player
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        for (int i = 0; i < 4; i++)
+        {
+            players.Add(ReInput.players.GetPlayer(i));
+        }
     }
 
     // Update is called once per frame
@@ -41,19 +49,41 @@ public class InputHandler : MonoBehaviour
 
         for (int i = 0; i < NUMPLAYERS; i++)
         {
-            PlayerHorizontalAxisGroup[i].Value = Input.GetAxis("Player " + (i + 1) + " Horizontal");
-            PlayerVerticalAxisGroup[i].Value = Input.GetAxis("Player " + (i + 1) + " Vertical");
+            //PlayerHorizontalAxisGroup[i].Value = Input.GetAxis("Player " + (i + 1) + " Horizontal");
+            //PlayerVerticalAxisGroup[i].Value = Input.GetAxis("Player " + (i + 1) + " Vertical");
+
+            PlayerHorizontalAxisGroup[i].Value = players[i].GetAxis("Horizontal");
+            PlayerVerticalAxisGroup[i].Value = players[i].GetAxis("Vertical");
+
+            //if (Input.GetButtonDown("Player " + (i + 1) + " circle"))
+            //{
+            //    PlayerCirclePressGroup[i].Raise();
+            //   // Debug.Log("Player " + i + " circle");
+            //}
 
             if (Input.GetButtonDown("Player " + (i + 1) + " circle"))
             {
                 PlayerCirclePressGroup[i].Raise();
-               // Debug.Log("Player " + i + " circle");
+                // Debug.Log("Player " + i + " circle");
             }
 
-        //    if (Input.GetButtonDown("Player " + (i + 1) + " x"))
-        //    {
-        //        PlayerXPressGroup[i].Raise();
-        //    }
+            //    if (Input.GetButtonDown("Player " + (i + 1) + " x"))
+            //    {
+            //        PlayerXPressGroup[i].Raise();
+            //    }
+
+            if (players[i].GetButtonDown("Dash"))
+            {
+                PlayerCirclePressGroup[i].Raise();
+                // Debug.Log("Player " + i + " circle");
+            }
+
+            if (players[i].GetButtonDown("Yell"))
+            {
+                PlayerXPressGroup[i].Raise();
+                // Debug.Log("Player " + i + " circle");
+            }
+
 
             if (Input.GetButtonDown("Player " + (i + 1) + " triangle"))
             {
@@ -66,29 +96,29 @@ public class InputHandler : MonoBehaviour
             }
         }
 
-       if (Input.GetButtonDown("Player 1 x"))
-       {
-           PlayerXPressGroup[0].Raise();
-          // Debug.Log("Player 1 x");
-       }
-      
-       if (Input.GetButtonDown("Player 2 x"))
-       {
-           PlayerXPressGroup[1].Raise();
-           // Debug.Log("Player 2 x");
-        }
-
-       if (Input.GetButtonDown("Player 3 x"))
-       {
-           PlayerXPressGroup[2].Raise();
-           // Debug.Log("Player 3 x");
-        }
-
-       if (Input.GetButtonDown("Player 4 x"))
-       {
-           PlayerXPressGroup[3].Raise();
-          //  Debug.Log("Player 4 x");
-        }
+       //if (Input.GetButtonDown("Player 1 x"))
+       //{
+       //    PlayerXPressGroup[0].Raise();
+       //   // Debug.Log("Player 1 x");
+       //}
+       //
+       //if (Input.GetButtonDown("Player 2 x"))
+       //{
+       //    PlayerXPressGroup[1].Raise();
+       //    // Debug.Log("Player 2 x");
+       // }
+       //
+       //if (Input.GetButtonDown("Player 3 x"))
+       //{
+       //    PlayerXPressGroup[2].Raise();
+       //    // Debug.Log("Player 3 x");
+       // }
+       //
+       //if (Input.GetButtonDown("Player 4 x"))
+       //{
+       //    PlayerXPressGroup[3].Raise();
+       //   //tt  Debug.Log("Player 4 x");
+       // }
     }
 
     void ControllerLocater()

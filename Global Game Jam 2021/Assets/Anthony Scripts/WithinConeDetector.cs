@@ -38,6 +38,9 @@ public class WithinConeDetector : MonoBehaviour
     [SerializeField]
     Collider coneCollider;
 
+    [SerializeField]
+    GameObject[] ConeSizes;
+
     private void Awake()
     {
         //CurrentTargetsInCone.Value.Clear();
@@ -47,33 +50,43 @@ public class WithinConeDetector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isActive == true)
+        ConeCheck(isActive);
+    }
+
+    public void ConeCheck(bool value)
+    {
+        if(value == false)
         {
-            ConeCheck();
+            for (int i = 0; i < ConeSizes.Length; i++)
+            {
+                ConeSizes[i].SetActive(false);
+            }
         }
         else
         {
-            coneCollider.enabled = false;
-            ConeSizeChange();
+            ConeSizes[myScreamHandler.CurrentScreamLevel].SetActive(true);
         }
-    }
-
-    public void ConeCheck()
-    {
-        //cone.transform.localScale = new Vector3(cone.transform.localScale.x, cone.transform.localScale.y, myScreamHandler.ScreamDataSet[myScreamHandler.CurrentScreamLevel].screamRadius.Value);
-        coneCollider.enabled = true;
     }
 
     void ConeSizeChange()
     {
-        cone.transform.localScale = new Vector3(cone.transform.localScale.x, cone.transform.localScale.y, myScreamHandler.ScreamDataSet[myScreamHandler.CurrentScreamLevel].screamRadius.Value);
+
+        //cone.transform.localScale = new Vector3(cone.transform.localScale.x, cone.transform.localScale.y, myScreamHandler.ScreamDataSet[myScreamHandler.CurrentScreamLevel].screamRadius.Value);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.tag == "Player")
         {
-            other.GetComponent<Rigidbody>().AddForce(transform.forward * myScreamHandler.ScreamDataSet[myScreamHandler.CurrentScreamLevel].PushPower.Value, ForceMode.VelocityChange);
+            if (other.GetComponent<Rigidbody>() == null)
+            {
+                
+                other.transform.parent.GetComponentInChildren<Rigidbody>().AddForce(transform.forward * myScreamHandler.ScreamDataSet[myScreamHandler.CurrentScreamLevel].PushPower.Value, ForceMode.VelocityChange);
+            }
+            else
+            {
+                other.GetComponent<Rigidbody>().AddForce(transform.forward * myScreamHandler.ScreamDataSet[myScreamHandler.CurrentScreamLevel].PushPower.Value, ForceMode.VelocityChange);
+            }
         } 
     }
 

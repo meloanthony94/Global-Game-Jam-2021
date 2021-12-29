@@ -4,12 +4,34 @@ using UnityEngine;
 
 public class CharacterSFXHandler : MonoBehaviour
 {
+    [System.Serializable]
+    public struct CharacterAudio
+    {
+        [Header("Clips")]
+        public AudioClip[] Level0YellGroup;
+
+        public AudioClip[] Level1YellGroup;
+
+        public AudioClip[] Level2YellGroup;
+
+        public AudioClip[] Level3YellGroup;
+    }
+
+    CharacterAnimationHandler myAnimHandler;
+
     [SerializeField]
     ScreamHandler myScreamHandle;
 
     [SerializeField]
     AudioSource myAudioSource;
 
+    [SerializeField]
+    FloatReference modelChoice;
+
+    [SerializeField]
+    CharacterAudio[] CharacterSet;
+
+    /*
     [Header("Clips")]
     [SerializeField]
     AudioClip[] Level0YellGroup;
@@ -22,11 +44,13 @@ public class CharacterSFXHandler : MonoBehaviour
 
     [SerializeField]
     AudioClip[] Level3YellGroup;
+    */
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         myAudioSource = GetComponent<AudioSource>();
+        myAnimHandler = GetComponent<CharacterAnimationHandler>();
     }
 
     // Update is called once per frame
@@ -42,24 +66,24 @@ public class CharacterSFXHandler : MonoBehaviour
 
     public void SelectYellGroup()
     {
-        if (myScreamHandle.isScreaming == true || myScreamHandle.isCoolingDown == true)
+        if (myScreamHandle.isCoolingDown == false)
        {
             switch (myScreamHandle.CurrentScreamLevel)
             {
                 case 0:
-                    SelectYell(Level0YellGroup);
+                    SelectYell(CharacterSet[(int)modelChoice.Value].Level0YellGroup);
                     break;
 
                 case 1:
-                    SelectYell(Level1YellGroup);
+                    SelectYell(CharacterSet[(int)modelChoice.Value].Level1YellGroup);
                     break;
 
                 case 2:
-                    SelectYell(Level2YellGroup);
+                    SelectYell(CharacterSet[(int)modelChoice.Value].Level2YellGroup);
                     break;
 
                 case 3:
-                    SelectYell(Level3YellGroup);
+                    SelectYell(CharacterSet[(int)modelChoice.Value].Level3YellGroup);
                     break;
 
                 default:
@@ -72,6 +96,7 @@ public class CharacterSFXHandler : MonoBehaviour
     {
         int index = Random.Range(0, clips.Length);
         myAudioSource.clip = clips[index];
+        myAnimHandler?.BeginYell(myAudioSource.clip.length);
 
         Yell();
     }

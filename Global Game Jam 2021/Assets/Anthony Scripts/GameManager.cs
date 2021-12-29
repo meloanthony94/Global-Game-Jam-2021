@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
@@ -27,6 +28,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private SpawnManager spManager = null;
 
+    [SerializeField]
+    UnityEvent VictoryEvent;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +38,7 @@ public class GameManager : MonoBehaviour
         EventManager.StartListening("Resume", HandleResumeGameEvent);
         EventManager.StartListening("PlayerDied", HandlePlayerDeadEvent);
         EventManager.StartListening("StartGame", HandleStartGameEvent);
+        EventManager.StartListening("NumberOfPlayers", HandleSetNumberOfPlayersEvent);
 
         SetGameState(GameState.NONE);
     }
@@ -41,11 +46,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (stateChanged)
-        {
-            stateChanged = false;
-            Process();
-        }
+        Process();
     }
 
     private void SetGameState(GameState state)
@@ -61,22 +62,39 @@ public class GameManager : MonoBehaviour
         switch (currentState)
         {
             case GameState.NONE:
-                numberOfActivePlayers = numberOfPlayers = 4;
                 break;
             case GameState.PLAY:
                 if (numberOfActivePlayers == 1)
                 {
                     SetGameState(GameState.END);
                 }
+                spManager.UpdatePlayerSpirtes();
                 break;
             case GameState.PAUSE:
                 return;
             case GameState.END:
                 // Display win screen
+                VictoryEvent.Invoke();
+                EventManager.TriggerEvent("EndGame", CheckWhoWon());
+                SetGameState(GameState.NONE);
                 break;
             default:
                 break;
         }
+    }
+
+    int CheckWhoWon()
+    {
+        for (int i = 0; i < spManager.PlayerObjects.Count; i++)
+        {
+            if (spManager.PlayerObjects[i].activeInHierarchy == true)
+            {
+                Debug.Log("Game Over! Player " + (i+1) + " wins!");
+                return i;
+            }
+        }
+
+        return -1;
     }
 
     private void HandlePauseGameEvent(object data)
@@ -108,6 +126,12 @@ public class GameManager : MonoBehaviour
         Debug.Log("HandleStartGameEvent()");
 
         StartGame();
+    }
+
+    private void HandleSetNumberOfPlayersEvent(object data)
+    {
+        numberOfPlayers = (int)data;
+        Debug.Log("HandleSetNumberOfPlayersEvent() with " + numberOfPlayers + " number of players");
     }
 
     public void StartGame()

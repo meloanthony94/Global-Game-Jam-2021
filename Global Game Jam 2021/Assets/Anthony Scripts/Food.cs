@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Food : MonoBehaviour, IFood
 {
@@ -12,8 +13,11 @@ public class Food : MonoBehaviour, IFood
         set { powerValue = value; }
     }
 
+    [SerializeField]
+    UnityEvent consumeEvent;
+
     public virtual void Consume()
     {
-
+        consumeEvent.Invoke();
     }
 }

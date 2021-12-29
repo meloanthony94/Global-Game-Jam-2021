@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class MenuInputController : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class MenuInputController : MonoBehaviour
     
     [SerializeField]
     private List<Button> buttonObjects = new List<Button>();
+
+    [SerializeField]
+    UnityEvent buttonHover;
 
     private int highlightedObjectIndex = 0;
 
@@ -31,7 +35,7 @@ public class MenuInputController : MonoBehaviour
                 highlightedObjectIndex += 1;
                 if (highlightedObjectIndex >= buttonObjects.Count)
                 {
-                    highlightedObjectIndex = -1;
+                    highlightedObjectIndex = 0;
                 }
 
                 if (highlightedObjectIndex >= 0 && highlightedObjectIndex < buttonObjects.Count)
@@ -41,6 +45,7 @@ public class MenuInputController : MonoBehaviour
                 }
 
                 timer = 0.3f;
+                buttonHover.Invoke();
             }
         }
         else

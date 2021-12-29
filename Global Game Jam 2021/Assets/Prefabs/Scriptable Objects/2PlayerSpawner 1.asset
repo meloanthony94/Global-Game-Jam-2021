@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 2PlayerSpawner 1
   m_EditorClassIdentifier: 
   playerSpawnPoints:
-  - {x: -0.5, y: 0.5, z: -5.5}
-  - {x: -0.5, y: 0.5, z: 5.5}
+  - {x: 0, y: 0.86, z: -10.71}
+  - {x: -9.34, y: 1.33, z: -5.24}

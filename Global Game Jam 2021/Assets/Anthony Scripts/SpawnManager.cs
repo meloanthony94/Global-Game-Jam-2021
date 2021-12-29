@@ -27,9 +27,50 @@ public class SpawnManager : MonoBehaviour
 
     static Random rng = new Random();
 
+    public List<GameObject> PlayerObjects { get => playerObjects; set => playerObjects = value; }
+
+    [SerializeField]
+    bool[] PlayerSet;
+
+    //
+    List<int> superFoodIndexList = new List<int>();
+    int superFoodrandomValue = -1;
+    bool generatingSperFoodSpawns = false;
+
     void Start()
     {
         EventManager.StartListening("RespawnSuperFood", HandleRespawnSuperFoodEvent);
+        EventManager.StartListening("PlayerReady", HandlePlayReady);
+    }
+
+    private void Update()
+    {
+        if (generatingSperFoodSpawns)
+        {
+            if (superFoodrandomValue == -1)
+                superFoodIndexList.Clear();
+            
+                superFoodrandomValue = Random.Range(0, numberOfSuperFood);
+
+            if (superFoodIndexList.Contains(superFoodrandomValue) == false)
+            {
+                superFoodIndexList.Add(superFoodrandomValue);
+            }
+
+
+            if (superFoodIndexList.Count == numberOfSuperFood)
+            {
+                superFoodrandomValue = -1;
+                generatingSperFoodSpawns = false;
+                //call func
+                SpawnSuperFood();
+            }
+        }
+    }
+
+    public void HandlePlayReady(object index)
+    {
+        PlayerSet[(int)index] = true;
     }
 
     public void SpawnGameObjects(int numberOfPlayers)
@@ -40,32 +81,54 @@ public class SpawnManager : MonoBehaviour
 
     private void SetPlayerSpawns(int numberOfPlayers)
     {
-        Vector3[] playerPositions = playerSpawns[numberOfPlayers - 2].playerSpawnPoints;
-        for (int i = 0; i < numberOfPlayers; i++)
+        Vector3[] playerPositions = playerSpawns[numberOfPlayers - 1].playerSpawnPoints;
+        int numSpawnedPlayers = 0;
+
+        for (int i = 0; i < 4; i++)
         {
-            playerObjects[i].transform.localPosition = playerPositions[i];
-            playerObjects[i].SetActive(true);
+            if (PlayerSet[i] == true)
+            {
+                numSpawnedPlayers++;
+                PlayerObjects[i].transform.localPosition = playerPositions[numSpawnedPlayers];
+                PlayerObjects[i].SetActive(true);
+            }
+            else
+            {
+                EventManager.TriggerEvent("TurnOffASprite", i);
+            }
+        }
+    }
+
+    public void UpdatePlayerSpirtes()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            if (PlayerSet[i] == false)
+            {
+                EventManager.TriggerEvent("TurnOffASprite", i);
+            }
         }
     }
 
     private void SpawnFood()
     {
-        SpawnSuperFood();
+        //SpawnSuperFood();
+        generatingSperFoodSpawns = true;
         SpawnBaseFood();
     }
 
     public void SpawnSuperFood()
     {
-        Debug.Assert(numberOfSuperFood < superFoodObjects.Count, "Number of super food objects to spawn is greater than the number of objects available!");
+        Debug.Assert(numberOfSuperFood <= superFoodObjects.Count, "Number of super food objects to spawn is greater than the number of objects available!");
 
-        var randomIndicies = GetRandomIndicies(numberOfSuperFood);
+        //var randomIndicies = GetRandomIndicies(numberOfSuperFood);
         for (int i = 0; i < numberOfSuperFood; i++)
         {
-            SuperFood.SuperFoodData data = new SuperFood.SuperFoodData(i, randomIndicies[i]);
+            SuperFood.SuperFoodData data = new SuperFood.SuperFoodData(i, superFoodIndexList[i]);
             superFoodObjects[i].GetComponent<SuperFood>().Data = data;
             superFoodPositions.Add(data.position);
 
-            superFoodObjects[i].transform.localPosition = superFoodSpawns.playerSpawnPoints[randomIndicies[i]];
+            superFoodObjects[i].transform.localPosition = superFoodSpawns.playerSpawnPoints[superFoodIndexList[i]];
             superFoodObjects[i].SetActive(true);
         }
     }
@@ -113,11 +176,13 @@ public class SpawnManager : MonoBehaviour
         }
 
         return result;
+
+        
     }
 
     public void TogglePlayer(int playerId, bool toggle)
     {
-        playerObjects[playerId].SetActive(toggle);
+        PlayerObjects[playerId].SetActive(toggle);
     }
 
     private IEnumerator GetRandomValue(HashSet<int> hash, int randomValue, int count)

@@ -13,11 +13,8 @@ MonoBehaviour:
   m_Name: SuperFoodPositions
   m_EditorClassIdentifier: 
   playerSpawnPoints:
-  - {x: -4, y: 14, z: 2}
-  - {x: 4, y: 14, z: 2}
-  - {x: -4, y: 14, z: -2}
-  - {x: 4, y: 14, z: -2}
-  - {x: 0, y: 14, z: 5}
-  - {x: 0, y: 14, z: -5}
-  - {x: 5, y: 14, z: 0}
-  - {x: -5, y: 14, z: 0}
+  - {x: -9.315, y: 1.69, z: -6.914}
+  - {x: -7.039, y: 4.054, z: 4.599}
+  - {x: -5.787, y: 0.809, z: -0.754}
+  - {x: -1.907, y: 0.723, z: -11.994}
+  - {x: 2.152, y: 1.701, z: -0.007}

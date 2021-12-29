@@ -594,6 +594,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerValue: 0
   respawnTimer: 2
+  ConsumeEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &122272113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -723,6 +726,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerValue: 0
   respawnTimer: 2
+  ConsumeEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &146437092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -852,6 +858,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerValue: 0
   respawnTimer: 2
+  ConsumeEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &147095001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -981,6 +990,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerValue: 0
   respawnTimer: 2
+  ConsumeEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &204752468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1594,6 +1606,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerValue: 0
   respawnTimer: 2
+  ConsumeEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &936270499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1987,6 +2002,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerValue: 0
   respawnTimer: 2
+  ConsumeEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1087028103
 GameObject:
   m_ObjectHideFlags: 0
@@ -2235,6 +2253,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerValue: 0
   respawnTimer: 2
+  ConsumeEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1536312286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2828,6 +2849,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerValue: 0
   respawnTimer: 2
+  ConsumeEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2124410162
 GameObject:
   m_ObjectHideFlags: 0
@@ -2882,6 +2906,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MenuManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829901998214881241, guid: abf2116d66c4f554f857fb420e168e2e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8829901998214881245, guid: abf2116d66c4f554f857fb420e168e2e,
         type: 3}

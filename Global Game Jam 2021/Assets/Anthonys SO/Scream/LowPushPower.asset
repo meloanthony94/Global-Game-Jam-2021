@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc5f3a79285f3664baeadd18b723e400, type: 3}
   m_Name: LowPushPower
   m_EditorClassIdentifier: 
-  value: 6
+  value: 3
